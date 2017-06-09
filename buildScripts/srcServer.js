@@ -6,7 +6,7 @@ import webpackConfig from '../webpack.config.dev'
 
 /* eslint-disable no-console */
 
-const _port = 3001;
+const _port = 3003;
 const _app = express();
 const _compiler = webpack(webpackConfig);
 

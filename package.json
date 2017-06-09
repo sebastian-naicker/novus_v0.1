@@ -4,7 +4,7 @@
 	"description": "Starting point for all projects",
 	"scripts": {
 		"prestart": "babel-node buildScripts/startMessage.js",
-		"start": "npm-run-all --parallel security-check start:server lint:watch test:watch",
+		"start": "npm-run-all --parallel security-check start:server lint:watch test:watch start:mockapi",
 		"start:server": "babel-node buildScripts/srcServer.js",
 		"security-check": "nsp check",
 		"lint": "esw webpack.config.* src buildScripts --color",
@@ -12,7 +12,10 @@
 		"localtunnel": "lt --port 3000",
 		"start:lt": "npm-run-all --parallel start:server localtunnel",
 		"test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
-		"test:watch": "npm run test -- --watch"
+		"test:watch": "npm run test -- --watch",
+		"generateMockData": "babel-node buildScripts/generateMockData.js",
+		"prestart:mockapi": "npm run generateMockData",
+		"start:mockapi": "json-server --watch src/api/db.json --port 3002"
 	},
 	"author": "Sebastian Naicker",
 	"license": "MIT",

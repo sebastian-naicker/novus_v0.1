@@ -1,4 +1,4 @@
-import {getUsers} from './api/userApi';
+import {getUsers, deleteUser} from './api/userApi';
 
 getUsers().then( result => {
 	let usersBody = "";
@@ -14,5 +14,18 @@ getUsers().then( result => {
 	});
 
 	global.document.getElementById('users').innerHTML = usersBody;
+	let deleteLinks = global.document.getElementsByClassName('deleteUser');
+
+	Array.from(deleteLinks, link => {
+
+		link.onclick = (event) => {
+			let elem = event.target;
+			event.preventDefault();
+			deleteUser(elem.dataset.id)
+			let row = elem.parentNode.parentNode;
+			row.parentNode.removeChild(row);
+		}
+
+	});
 
 });
