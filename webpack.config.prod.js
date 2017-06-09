@@ -1,6 +1,7 @@
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import WebpackMd5Hash from "webpack-md5-hash";
 
 export default {
 
@@ -15,9 +16,13 @@ export default {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		publicPath: '/',
-		filename: '[name].js'
+		filename: '[name].[chunkhash].js'
 	},
 	plugins: [
+
+		// hash all bundled files
+		new WebpackMd5Hash(),
+
 		// remove duplicate packages
 		new webpack.optimize.DedupePlugin(),
 
