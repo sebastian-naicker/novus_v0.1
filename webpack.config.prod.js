@@ -7,18 +7,26 @@ export default {
 	debug: true,
 	devtool: 'source-map',
 	noInfo: false,
-	entry: [
-		path.resolve(__dirname, 'src/index')
-	],
+	entry: {
+		main: path.resolve(__dirname, 'src/index'),
+		vendor: path.resolve(__dirname, 'src/vendor')
+	},
 	target: 'web',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		publicPath: '/',
-		filename: 'bundle.js'
+		filename: '[name].js'
 	},
 	plugins: [
 		// remove duplicate packages
 		new webpack.optimize.DedupePlugin(),
+
+		// commonsChunkPlugin used for bundle splitting
+		// basically anything that's not apart of main code base
+		// will be split into a seperate bundle
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'vendor'
+		}),
 
 		// JS Minification
 		new webpack.optimize.UglifyJsPlugin(),
