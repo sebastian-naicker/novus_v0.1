@@ -5,9 +5,15 @@
 		"plugin:import/errors",
 		"plugin:import/warnings"
 	],
+	"plugins": [
+		"react"
+	],
 	"parserOptions": {
 		"ecmaVersion": 7,
-		"sourceType": "module"
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
 	},
 	"env": {
 		"browser": true,

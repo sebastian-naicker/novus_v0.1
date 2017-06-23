@@ -1,4 +1,5 @@
 import path from 'path';
+import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
@@ -7,6 +8,8 @@ export default {
 	devtool: 'inline-source-map',
 	noInfo: false,
 	entry: [
+		'eventsource-polyfill', // necessary for hot reloading with IE
+		'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
 		path.resolve(__dirname, 'src/index')
 	],
 	target: 'web',
@@ -16,6 +19,7 @@ export default {
 		filename: 'bundle.js'
 	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
 		// handle html files
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
