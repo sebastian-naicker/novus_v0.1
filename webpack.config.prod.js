@@ -5,9 +5,7 @@ import WebpackMd5Hash from "webpack-md5-hash";
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default {
-	debug: true,
 	devtool: 'source-map',
-	noInfo: false,
 	entry: {
 		main: path.resolve(__dirname, 'src/index'),
 		vendor: path.resolve(__dirname, 'src/vendor')
@@ -24,9 +22,6 @@ export default {
 
 		// hash all bundled files
 		new WebpackMd5Hash(),
-
-		// remove duplicate packages
-		new webpack.optimize.DedupePlugin(),
 
 		// commonsChunkPlugin used for bundle splitting
 		// basically anything that's not apart of main code base
@@ -57,9 +52,9 @@ export default {
 		})
 	],
 	module: {
-		loaders: [
-			{ test: /\.js$/, exclude: /node_modules/, loaders: ['babel'] },
-			{ test: /\.css$/, loader: ExtractTextPlugin.extract('css?sourceMap') },
+		rules: [
+			{ test: /\.js$/, exclude: /node_modules/, loader: ['babel-loader'] },
+			{ test: /\.css$/, loader: ['style-loader', 'css-loader'] },
 		]
 	}
 };
