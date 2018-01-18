@@ -5,7 +5,6 @@ import WebpackMd5Hash from "webpack-md5-hash";
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default {
-
 	debug: true,
 	devtool: 'source-map',
 	noInfo: false,
@@ -20,7 +19,6 @@ export default {
 		filename: '[name].[chunkhash].js'
 	},
 	plugins: [
-
 		// extract all css for production
 		new ExtractTextPlugin('[name].[contenthash].css'),
 
@@ -57,7 +55,6 @@ export default {
 				minifyURLs: true
 			}
 		})
-
 	],
 	module: {
 		loaders: [
@@ -65,5 +62,4 @@ export default {
 			{ test: /\.css$/, loader: ExtractTextPlugin.extract('css?sourceMap') },
 		]
 	}
-
-}
+};

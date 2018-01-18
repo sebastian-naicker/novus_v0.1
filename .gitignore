@@ -1,5 +1,5 @@
 # Webstorm Project files
-.idea/
+.idea/*
 
 # Logs
 logs
@@ -61,6 +61,6 @@ typings/
 .env
 
 # build files
-dist/
+dist*
 
 .vscode/
