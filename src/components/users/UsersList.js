@@ -2,10 +2,10 @@
  * Created by sebastiann on 2017/06/23.
  */
 
-const Users = {
+const UsersList = () => {
 
 
 
 };
 
-export default Users;
+export default UsersList;

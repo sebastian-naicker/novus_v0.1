@@ -12,7 +12,7 @@ console.log(chalk.cyan('Building Production Files...'));
 webpack(webpackConfig).run((err, stats) => {
 
 	if(err) {
-		console.log(chalk.red(err))
+		console.log(chalk.red(err));
 		return 1;
 	}
 

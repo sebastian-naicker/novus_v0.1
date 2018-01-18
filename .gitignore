@@ -1,3 +1,6 @@
+# Webstorm Project files
+.idea/
+
 # Logs
 logs
 *.log
@@ -57,3 +60,7 @@ typings/
 # dotenv environment variables file
 .env
 
+# build files
+dist/
+
+.vscode/
