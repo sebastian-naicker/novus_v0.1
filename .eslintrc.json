@@ -1,6 +1,8 @@
 {
 	"root": true,
 	"extends": [
+		"react",
+		"essentials",
 		"eslint:recommended",
 		"plugin:import/errors",
 		"plugin:import/warnings"
