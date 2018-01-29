@@ -5,6 +5,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 export default {
 	devtool: 'inline-source-map',
 	entry: [
+		'babel-polyfill',
 		'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
 		path.resolve(__dirname, 'src/index')
 	],
@@ -16,6 +17,7 @@ export default {
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
+
 		// handle html files
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
