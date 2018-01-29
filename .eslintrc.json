@@ -4,13 +4,6 @@
 		"essentials",
 		"react"
 	],
-	"parserOptions": {
-		"ecmaVersion": 7,
-		"sourceType": "module",
-		"ecmaFeatures": {
-			"jsx": true
-		}
-	},
 	"env": {
 		"browser": true,
 		"node": true,
@@ -19,6 +12,8 @@
 	"rules": {
 		"no-console": 1,
 		"indent": ["error", "tab"],
-		"comma-dangle": 0
+		"comma-dangle": 0,
+		"space-before-function-paren": 0,
+		"jsx-curly-spacing": 0
 	}
 }

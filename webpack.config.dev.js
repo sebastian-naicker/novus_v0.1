@@ -15,6 +15,12 @@ export default {
 		publicPath: '/',
 		filename: 'bundle.js'
 	},
+	resolve: {
+		modules: [
+			'node_modules',
+			path.resolve(__dirname, 'src/app'),
+		]
+	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 
