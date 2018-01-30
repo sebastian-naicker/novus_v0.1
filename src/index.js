@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars*/
-import './index.css';
+import './index.scss';
 import React from 'react';
 import { render } from 'react-dom';
 import Layout from './app/components/layout';
