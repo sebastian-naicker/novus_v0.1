@@ -16,6 +16,7 @@ export default {
 		filename: 'bundle.js'
 	},
 	resolve: {
+		extensions: ['.js', '.jsx'],
 		modules: [
 			'node_modules',
 			path.resolve(__dirname, 'src/app'),
@@ -37,7 +38,7 @@ export default {
 	],
 	module: {
 		rules: [
-			{ test: /\.js$/, exclude: /node_modules/, loader: ['babel-loader'] },
+			{ test: /\.(js|jsx)$/, exclude: /node_modules/, loader: ['babel-loader'] },
 			{ test: /\.css$/, loader: ['style-loader', 'css-loader'] },
 		]
 	}
