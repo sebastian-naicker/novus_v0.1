@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 const isDefined = func => (func && typeof func === 'function');
 
-// eslint-disable-next-line
 const lifecycle = ({
 	willMount,
 	didMount,
@@ -21,7 +20,7 @@ const lifecycle = ({
 		this.componentWillUnmount = isDefined(willUnmount) ? this.componentWillUnmount : undefined;
 	}
 
-	componentWillMount() { console.log('hi i was run'); willMount(); }
+	componentWillMount() { willMount(); }
 	componentDidMount() { didMount(); }
 	componentWillReceiveProps() { willReceiveProps(); }
 	shouldComponentUpdate() { shouldUpdate(); }

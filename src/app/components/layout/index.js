@@ -6,8 +6,10 @@
 
 import React from 'react';
 import lifecycle from 'shared/utils/lifecycle';
-import { default as Layout } from './layout';
+import Layout from './layout';
 
-const willMount = () => {};
+const willMount = () => {
+	console.log('mounted');
+};
 
 export default lifecycle({ willMount })(Layout);
