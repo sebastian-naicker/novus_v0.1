@@ -12,4 +12,5 @@ const willMount = () => {
 	console.log('mounted');
 };
 
-export default lifecycle({ willMount })(Layout);
+export default lifecycle({})(Layout);
+// connect()(wrappedComponent);
