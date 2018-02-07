@@ -5,7 +5,7 @@
 /* eslint-disable no-unused-vars */
 
 import React from 'react';
-import lifecycle from 'shared/utils/lifecycle';
+import lifecycle from 'utils/lifecycle';
 import Layout from './layout';
 
 const willMount = () => {

@@ -1,12 +1,13 @@
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MyWebpackPlugin from './common/webpack/plugins/MyWebpackPlugin';
 
 export default {
 	devtool: 'inline-source-map',
 	entry: [
 		'babel-polyfill',
-		'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
+		'webpack-hot-middleware/client?reload=true', // note that it reloads the page if hot module reloading fails.
 		path.resolve(__dirname, 'src/index')
 	],
 	target: 'web',
@@ -20,6 +21,7 @@ export default {
 		modules: [
 			'node_modules',
 			path.resolve(__dirname, 'src/app'),
+			path.resolve(__dirname, 'src/shared'),
 		]
 	},
 	plugins: [
@@ -29,6 +31,11 @@ export default {
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
 			inject: true
+		}),
+
+		// test plugin
+		new MyWebpackPlugin({
+			name: 'test plugin',
 		}),
 
 		// enable debug mode
