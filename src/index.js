@@ -1,6 +1,6 @@
-import './index.css';
+import './index.scss';
 import React from 'react';
-import {render} from 'react-dom';
-import App from './components/App';
+import { render } from 'react-dom';
+import Layout from './app/components/layout';
 
-render(<App/>, document.getElementById('app'));
+render(<Layout/>, document.getElementById('app'));
