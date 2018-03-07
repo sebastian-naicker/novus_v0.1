@@ -4,7 +4,7 @@
   "description": "Starting point for all projects",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel security-check start:server lint:watch test:watch start:mockapi",
+    "start": "npm-run-all --parallel security-check start:server start:mockapi",
     "start:server": "babel-node buildScripts/srcServer.js",
     "security-check": "nsp check",
     "lint": "esw webpack.config.* src buildScripts --color",

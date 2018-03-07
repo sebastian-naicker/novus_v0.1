@@ -1,7 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MyWebpackPlugin from './common/webpack/plugins/MyWebpackPlugin';
 
 export default {
 	devtool: 'inline-source-map',
@@ -33,11 +32,6 @@ export default {
 			inject: true
 		}),
 
-		// test plugin
-		new MyWebpackPlugin({
-			name: 'test plugin',
-		}),
-
 		// enable debug mode
 		new webpack.LoaderOptionsPlugin({
 			debug: true
@@ -45,8 +39,15 @@ export default {
 	],
 	module: {
 		rules: [
-			{ test: /\.(js|jsx|test)$/, exclude: /node_modules/, loader: ['babel-loader'] },
-			{ test: /\.(css|scss)$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
+			{
+				test: /\.(js|jsx|test)$/,
+				exclude: /node_modules/,
+				loader: ['babel-loader', 'my-loader']
+			},
+			{
+				test: /\.(css|scss)$/,
+				loader: ['style-loader', 'css-loader', 'sass-loader']
+			},
 		]
 	}
 };
