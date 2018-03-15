@@ -1,6 +1,6 @@
 import './index.scss';
 import React from 'react';
 import { render } from 'react-dom';
-import Layout from './app/components/layout';
+import App from './app';
 
-render(<Layout/>, document.getElementById('app'));
+render(<App/>, document.getElementById('app'));

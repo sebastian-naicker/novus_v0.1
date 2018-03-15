@@ -18,6 +18,8 @@ export default {
 	resolve: {
 		extensions: ['.js', '.jsx', '.test'],
 		modules: [
+			path.resolve(__dirname, 'src/shared/components'),
+			path.resolve(__dirname, 'local_modules'),
 			'node_modules',
 			path.resolve(__dirname, 'src/app'),
 			path.resolve(__dirname, 'src/shared'),
