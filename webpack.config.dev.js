@@ -42,7 +42,7 @@ export default {
 			{
 				test: /\.(js|jsx|test)$/,
 				exclude: /node_modules/,
-				loader: ['babel-loader', 'my-loader']
+				loader: ['babel-loader']
 			},
 			{
 				test: /\.(css|scss)$/,
