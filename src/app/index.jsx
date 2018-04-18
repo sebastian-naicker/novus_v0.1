@@ -1,8 +1,9 @@
 import React from 'react';
-import Layout from 'layout';
 
 export default function App() {
 	return (
-		<Layout/>
+		<div>
+			<h1>Hello world, this is hot reload, or not</h1>
+		</div>
 	);
 }
