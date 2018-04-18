@@ -7,7 +7,7 @@ export default {
 	devtool: 'inline-source-map',
 	entry: [
 		'babel-polyfill',
-		'webpack-hot-middleware/client?reload=false', // note that it reloads the page if hot module reloading fails.
+		'webpack-hot-middleware/client?reload=true', // note that it reloads the page if hot module reloading fails.
 		path.resolve(__dirname, '../src/index'),
 		path.resolve(__dirname, '../src/index.scss'),
 	],
