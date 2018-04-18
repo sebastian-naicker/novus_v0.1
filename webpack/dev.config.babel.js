@@ -1,19 +1,18 @@
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import DevServer from '../devserver';
 
 export default {
 	mode: "development",
 	devtool: 'inline-source-map',
 	entry: [
 		'babel-polyfill',
-		'webpack-hot-middleware/client?reload=true', // note that it reloads the page if hot module reloading fails.
+		'webpack-hot-middleware/client?reload=false', // note that it reloads the page if hot module reloading fails.
 		path.resolve(__dirname, '../src/index'),
 	],
 	target: 'web',
 	output: {
-		path: path.resolve(__dirname, 'src'),
+		path: path.resolve(__dirname, '../src'),
 		publicPath: '/',
 		filename: 'bundle.js'
 	},
@@ -21,11 +20,16 @@ export default {
 		extensions: ['.js', '.jsx', '.test'],
 		modules: [
 			'node_modules',
-			path.resolve(__dirname, 'src/app'),
-			path.resolve(__dirname, 'src/shared'),
+			path.resolve(__dirname, '../src/app'),
+			path.resolve(__dirname, '../src/shared'),
 		]
 	},
-	...DevServer, // webpack dev server
+	devServer: {
+		contentBase: path.join(__dirname, '../dist'), // boolean | string | array, static file location
+		compress: true, // enable gzip compression
+		hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
+		https: false, // true for self-signed, object for cert authority
+	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 
