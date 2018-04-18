@@ -9,6 +9,7 @@ export default {
 		'babel-polyfill',
 		'webpack-hot-middleware/client?reload=false', // note that it reloads the page if hot module reloading fails.
 		path.resolve(__dirname, '../src/index'),
+		path.resolve(__dirname, '../src/index.scss'),
 	],
 	target: 'web',
 	output: {
@@ -47,13 +48,18 @@ export default {
 	module: {
 		rules: [
 			{
-				test: /\.(js|jsx|test)$/,
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
-				loader: ['babel-loader'],
+				loader: ['babel-loader', 'eslint-loader'],
 			},
 			{
-				test: /\.(css|scss)$/,
-				loader: ['style-loader', 'css-loader', 'sass-loader']
+				test: /\.scss$/,
+				enforce: 'pre',
+				loader: ['import-glob-loader2']
+			},
+			{
+				test: /\.scss$/,
+				loader: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
 			},
 		]
 	}
