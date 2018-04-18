@@ -59,7 +59,12 @@ export default {
 			},
 			{
 				test: /\.scss$/,
-				loader: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+				loader: [
+					{ loader: 'style-loader' },
+					{ loader: 'css-loader' },
+					{ loader: 'postcss-loader' },
+					{ loader: 'sass-loader' }
+				]
 			},
 		]
 	}
