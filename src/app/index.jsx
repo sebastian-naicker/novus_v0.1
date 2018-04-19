@@ -35,11 +35,11 @@ export default class App extends Component {
 
 	updateName = ({ target: { value } }) => {
 		this.setState({ name: value });
-	}
+	};
 
 	updateSurname = ({ target: { value } }) => {
 		this.setState({ surname: value });
-	}
+	};
 
 	render() {
 		return (
@@ -51,7 +51,12 @@ export default class App extends Component {
 					<SurnameInput onChange={this.updateSurname} />
 					<div>
 						<label htmlFor="#surname">Your Feedback</label>
-						<textarea name="message" id="message" defaultValue={JSON.stringify(this.state)} cols="30" rows="10" />
+						<textarea
+							name="message"
+							id="message"
+							value={JSON.stringify(this.state)}
+							cols="30"
+							rows="10" />
 					</div>
 				</form>
 			</div>
