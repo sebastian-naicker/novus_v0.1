@@ -1,10 +1,10 @@
 import React from 'react';
 import Loadable from 'react-loadable';
-import Loading from 'components/loader';
+import Loading from 'common/components/loader';
 
-const enhancedRoutes = name => {
+const enhancedRoute = name => {
 	const Component = Loadable({ // eslint-disable-line
-		loader: () => import(`./pages/${name}`),
+		loader: () => import(`pages/${name}`),
 		loading: Loading,
 	});
 
@@ -18,4 +18,4 @@ const enhancedRoutes = name => {
 };
 
 
-export default enhancedRoutes;
+export default enhancedRoute;
