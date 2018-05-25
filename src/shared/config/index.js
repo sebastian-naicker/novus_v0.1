@@ -14,12 +14,6 @@ export const routes = [
 		component: enhancedRoute('about'),
 	},
 	{
-		path: '/contact',
-		title: 'Contact',
-		exact: true,
-		component: enhancedRoute('contact'),
-	},
-	{
 		component: enhancedRoute('404'),
 	},
 ];

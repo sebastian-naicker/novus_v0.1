@@ -25,7 +25,7 @@ export default {
 		]
 	},
 	devServer: {
-		contentBase: path.join(__dirname, '../dist'), // boolean | string | array, static file location
+		contentBase: path.join(__dirname, '../dist/index.html'), // boolean | string | array, static file location
 		compress: true, // enable gzip compression
 		hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
 		https: false, // true for self-signed, object for cert authority

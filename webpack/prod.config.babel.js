@@ -29,7 +29,7 @@ export default {
 
 		// handle html files
 		new HtmlWebpackPlugin({
-			template: 'src/index.html',
+			template: path.resolve(__dirname, '../src/index.html'),
 			inject: true,
 			minify: {
 				removeComments: true,
