@@ -29,6 +29,7 @@ export default {
 		compress: true, // enable gzip compression
 		hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
 		https: false, // true for self-signed, object for cert authority
+		historyApiFallback: true,
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
@@ -52,7 +53,7 @@ export default {
 				loader: ['babel-loader', 'eslint-loader'],
 			},
 			{
-				test: /\.scss$/,
+				test: /\.(js|jsx|scss)$/,
 				enforce: 'pre',
 				loader: ['import-glob-loader2']
 			},
