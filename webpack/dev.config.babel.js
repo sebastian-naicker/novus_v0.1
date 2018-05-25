@@ -53,7 +53,7 @@ export default {
 				loader: ['babel-loader', 'eslint-loader'],
 			},
 			{
-				test: /\.(js|jsx|scss)$/,
+				test: /\.scss$/,
 				enforce: 'pre',
 				loader: ['import-glob-loader2']
 			},

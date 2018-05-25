@@ -1,9 +1,17 @@
 import enhancedRoute from 'utils/enhanced-route';
 
-const routes = [
+export const routes = [
 	{
 		path: '/',
 		component: enhancedRoute('home'),
+	},
+	{
+		path: '/about',
+		component: enhancedRoute('about'),
+	},
+	{
+		path: '/contact',
+		component: enhancedRoute('contact'),
 	},
 	{
 		path: '',
@@ -11,4 +19,4 @@ const routes = [
 	},
 ];
 
-export default routes;
+export default undefined;
