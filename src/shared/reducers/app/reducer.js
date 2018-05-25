@@ -1,6 +1,8 @@
 import { RESTORE_APP } from './actions';
 
-const initialState = {};
+const initialState = {
+	pageTitle: 'Home',
+};
 
 /* eslint-disable */
 const app = (state = {}, { type, payload }) => {
