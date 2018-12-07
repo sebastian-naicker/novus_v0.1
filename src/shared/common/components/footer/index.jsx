@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
 	<footer>
-		<span>Copyright; 2017-2018</span>
+		<p>Copyright; 2017-2018</p>
 	</footer>
 );
 

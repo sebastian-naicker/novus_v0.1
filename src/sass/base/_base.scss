@@ -1,3 +1,7 @@
+@import "~bulma_scss";
+
+$base-font-size: 16px;
+
 * {
 	box-sizing: border-box;
 }
@@ -7,10 +11,13 @@ body {
 	padding: 0;
 	font-family: 'Quicksand', sans-serif;
 	color: #333;
+	font-size: 100%;
 }
 
 #app {
 	max-width: 1024px;
 	margin: 0 auto;
 	overflow: hidden;
+	min-height: 100vh;
+	padding: 15px;
 }

@@ -14,6 +14,12 @@ export const routes = [
 		component: enhancedRoute('about'),
 	},
 	{
+		path: '/todo',
+		title: 'Todo',
+		exact: true,
+		component: enhancedRoute('todo'),
+	},
+	{
 		component: enhancedRoute('404'),
 	},
 ];
