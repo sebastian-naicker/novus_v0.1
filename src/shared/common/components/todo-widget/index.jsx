@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Todo from './Todo';
-import TodoList from './TodoList';
-import TodoForm from './TodoForm';
+// import TodoList from './TodoList';
+// import TodoForm from './TodoForm';
 
 class TodoWidget extends Component {
 	state = {
@@ -31,8 +31,21 @@ class TodoWidget extends Component {
 		return (
 			<div className="panel">
 				<h2 className="panel-heading">My Todo List</h2>
-				<TodoForm setTodo={this.setTodo} createTodo={this.createTodo} value={this.state.todo} />
-				<TodoList todoItems={this.state.todoItems} onRemoveTodo={this.removeTodo} />
+				<form className="panel-block">
+					<input type="text" onChange={this.setTodo} className="input is-pulled-left" placeholder="My next todo" value={this.state.todo}/>
+					<button onClick={this.createTodo} className="button is-primary is-pulled-right">Add Todo</button>
+				</form>
+				<ul>
+					{this.state.todoItems.map((item, index) => (
+						<li key={index} className="panel-block todo-item">
+						<span className="panel-icon is-pulled-left">
+							<i className="fas fa-sticky-note" />
+						</span>
+							<span>{item}</span>
+							<button data-id={index} onClick={this.removeTodo} className="delete is-pulled-right" />
+						</li>
+					))}
+				</ul>
 			</div>
 		);
 	}

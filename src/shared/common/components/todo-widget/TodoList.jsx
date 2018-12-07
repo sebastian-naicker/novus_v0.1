@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import TodoItem from './TodoItem';
 
 class TodoList extends Component {
 	render() {
-		const { todoItems, onRemoveTodo } = this.props;
+		const { todoItems, removeTodo } = this.props;
 		return (
 			<ul>
 				{todoItems.map((item, index) => (
-					<TodoItem onRemoveTodo={onRemoveTodo} item={{ content: item, id: index }} />
+					<li key={index} className="panel-block todo-item">
+						<span className="panel-icon is-pulled-left">
+							<i className="fas fa-sticky-note" />
+						</span>
+						<span>{item}</span>
+						<button data-id={index} onClick={removeTodo} className="delete is-pulled-right" />
+					</li>
 				))}
 			</ul>
 		);
