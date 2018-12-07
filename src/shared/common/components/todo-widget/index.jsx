@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Todo from './Todo';
+import Todo from './Todo';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 
@@ -29,11 +29,10 @@ class TodoWidget extends Component {
 
 	render() {
 		return (
-			<div className="panel">
-				<h2 className="panel-heading">My Todo List</h2>
+			<Todo>
 				<TodoForm setTodo={this.setTodo} createTodo={this.createTodo} value={this.state.todo} />
 				<TodoList todoItems={this.state.todoItems} onRemoveTodo={this.removeTodo} />
-			</div>
+			</Todo>
 		);
 	}
 }

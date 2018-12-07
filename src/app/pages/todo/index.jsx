@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TodoWidget from 'common/components/todo';
+import TodoWidget from 'common/components/todo-widget';
 
 class TodoPage extends Component {
 	render() {
