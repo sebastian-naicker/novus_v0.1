@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Todo from './Todo';
+// import Todo from './Todo';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 
@@ -38,5 +38,4 @@ class TodoWidget extends Component {
 	}
 }
 
-export default Todo;
-
+export default TodoWidget;
