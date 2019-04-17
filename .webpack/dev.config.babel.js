@@ -7,7 +7,7 @@ export default {
 	devtool: 'inline-source-map',
 	stats: 'errors-only',
 	entry: [
-		'babel-polyfill',
+		'@babel/polyfill',
 		path.resolve(__dirname, '../src/index.js'),
 		path.resolve(__dirname, '../src/index.scss'),
 	],

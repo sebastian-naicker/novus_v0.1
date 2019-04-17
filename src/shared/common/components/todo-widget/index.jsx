@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-// import Todo from './Todo';
-// import TodoList from './TodoList';
-// import TodoForm from './TodoForm';
+import Todo from './Todo';
 
 class TodoWidget extends Component {
 	state = {
@@ -27,26 +25,24 @@ class TodoWidget extends Component {
 		this.setState({ todo: e.target.value });
 	};
 
+	resetList = () => {
+		console.log('sould reset!!!');
+	}
+
 	render() {
 		return (
-			<div className="panel">
-				<h2 className="panel-heading">My Todo List</h2>
-				<form className="panel-block">
-					<input type="text" onChange={this.setTodo} className="input is-pulled-left" placeholder="My next todo" value={this.state.todo}/>
-					<button onClick={this.createTodo} className="button is-primary is-pulled-right">Add Todo</button>
-				</form>
-				<ul>
-					{this.state.todoItems.map((item, index) => (
-						<li key={index} className="panel-block todo-item">
-						<span className="panel-icon is-pulled-left">
-							<i className="fas fa-sticky-note" />
-						</span>
-							<span>{item}</span>
-							<button data-id={index} onClick={this.removeTodo} className="delete is-pulled-right" />
-						</li>
-					))}
-				</ul>
-			</div>
+			<Todo
+				setTodo={this.setTodo}
+				removeTodo={this.removeTodo}
+				value={this.state.todo}
+				createTodo={this.createTodo}
+				todoItems={this.state.todoItems}
+				resetList={this.resetList}
+			>
+				<Todo.Form />
+				<Todo.List />
+				<Todo.Reset />
+			</Todo>
 		);
 	}
 }

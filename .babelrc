@@ -1,4 +1,4 @@
 {
-	"presets": ["env", "react", "stage-2"],
-	"plugins": ["syntax-dynamic-import"]
+	"presets": ["@babel/env", "@babel/react"],
+	"plugins": ["syntax-dynamic-import", "@babel/plugin-proposal-class-properties"]
 }
