@@ -20,6 +20,12 @@ export const routes = [
 		component: enhancedRoute('todo'),
 	},
 	{
+		path: '/contact',
+		title: 'Contact Page',
+		exact: true,
+		component: enhancedRoute('contact'),
+	},
+	{
 		component: enhancedRoute('404'),
 	},
 ];

@@ -5,9 +5,9 @@ import { routes } from 'config';
 const Header = () => (
 	<header>
 		<nav>
-			{/*<ul>*/}
-				{/*{routes.map(({ path, title }, i) => title && <li key={i}><Link to={path}>{title}</Link></li>)}*/}
-			{/*</ul>*/}
+			<ul>
+				{routes.map(({ path, title }, i) => title && <li key={i}><Link to={path}>{title}</Link></li>)}
+			</ul>
 		</nav>
 	</header>
 );
