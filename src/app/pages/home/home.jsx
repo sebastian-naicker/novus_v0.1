@@ -5,7 +5,7 @@ class Home extends Component {
 	render() {
 		const { pageTitle } = this.props;
 		return (
-			<div>
+			<div className='panel'>
 				<h1>{pageTitle}</h1>
 			</div>
 		);

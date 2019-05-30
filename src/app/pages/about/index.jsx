@@ -11,7 +11,7 @@ export default class AboutPage extends React.Component {
 
 	render() {
 		return (
-			<React.Fragment>
+			<div className='panel'>
 				<h1>About</h1>
 
 				<section>
@@ -25,7 +25,7 @@ export default class AboutPage extends React.Component {
 						for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font,
 						or layout.</p>
 				</section>
-			</React.Fragment>
+			</div>
 		);
 	}
 }
