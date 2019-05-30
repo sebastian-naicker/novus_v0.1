@@ -2,7 +2,7 @@ import { reducerFactory } from 'factories';
 import * as actions from './actions';
 
 const initialState = {
-	title: 'Home',
+	title: '',
 };
 
 /* eslint-disable */

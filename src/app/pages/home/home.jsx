@@ -6,6 +6,10 @@ class Home extends Component {
 		this.props.didMount();
 	}
 
+	componentWillUnmount() {
+		this.props.willUnmount();
+	}
+
 	render() {
 		const { title } = this.props;
 		return (
@@ -18,10 +22,12 @@ class Home extends Component {
 
 Home.defaultProps = {
 	title: '',
+	willUnmount: () => {},
 };
 
 Home.propTypes = {
 	title: PropTypes.string,
+	willUnmount: PropTypes.func,
 };
 
 export default Home;
