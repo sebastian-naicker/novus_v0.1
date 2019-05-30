@@ -1,5 +1,4 @@
-export const RESTORE_APP = 'RESTORE_APP';
+import { actionFactory } from 'factories';
 
-export const restoreAppState = () => ({
-	type: RESTORE_APP,
-});
+export const RESTORE_APP = 'global/RESTORE_APP';
+export const restoreAppState = actionFactory(RESTORE_APP, null);
