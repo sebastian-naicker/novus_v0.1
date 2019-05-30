@@ -14,6 +14,18 @@ export const routes = [
 		component: enhancedRoute('about'),
 	},
 	{
+		path: '/todo',
+		title: 'Todo',
+		exact: true,
+		component: enhancedRoute('todo'),
+	},
+	{
+		path: '/contact',
+		title: 'Contact Page',
+		exact: true,
+		component: enhancedRoute('contact'),
+	},
+	{
 		component: enhancedRoute('404'),
 	},
 ];

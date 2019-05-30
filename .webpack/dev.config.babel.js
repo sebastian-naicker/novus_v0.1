@@ -5,8 +5,9 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 export default {
 	mode: "development",
 	devtool: 'inline-source-map',
+	stats: 'errors-only',
 	entry: [
-		'babel-polyfill',
+		'@babel/polyfill',
 		path.resolve(__dirname, '../src/index.js'),
 		path.resolve(__dirname, '../src/index.scss'),
 	],
@@ -30,6 +31,7 @@ export default {
 		hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
 		https: false, // true for self-signed, object for cert authority
 		historyApiFallback: true,
+		stats: 'errors-only'
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
@@ -50,7 +52,7 @@ export default {
 			{
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
-				loader: ['babel-loader', 'eslint-loader'],
+				loader: ['babel-loader'],
 			},
 			{
 				test: /\.scss$/,
