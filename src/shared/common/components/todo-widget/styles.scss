@@ -1,0 +1,20 @@
+.input {
+	margin-right: 10px;
+}
+
+.icon {
+	margin-right: 5px;
+
+	i {
+		color: #ccc;
+	}
+}
+
+.todo-item {
+	position: relative;
+
+	button {
+		position: absolute;
+		right: 10px;
+	}
+}

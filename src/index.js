@@ -1,6 +1,13 @@
-// import './index.scss';
 import React from 'react';
 import { render } from 'react-dom';
-import App from './app/index';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { devToolsEnhancer } from 'redux-devtools-extension';
+import reducers from 'local-redux';
+import App from './app';
+import init from './app/setup';
 
-render(<App/>, document.getElementById('app'));
+const store = createStore(reducers, devToolsEnhancer());
+init(); // run app setup
+
+render(<Provider store={store}><App /></Provider>, document.getElementById('app'));

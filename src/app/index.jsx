@@ -1,9 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { routes } from 'config';
+import { Header, Footer } from 'common/components';
 
-export default function App() {
-	return (
-		<div>
-			<h1>Hello world, this is hot reload, or not</h1>
-		</div>
-	);
-}
+export default () => (
+	<Router>
+		<React.Fragment>
+			<Header />
+			<Switch>
+				{routes.map((route, i) => <Route key={i} {...route} />)}
+			</Switch>
+			<Footer />
+		</React.Fragment>
+	</Router>
+);

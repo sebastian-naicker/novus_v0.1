@@ -5,10 +5,10 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 export default {
 	mode: "development",
 	devtool: 'inline-source-map',
+	stats: 'errors-only',
 	entry: [
-		'babel-polyfill',
-		'webpack-hot-middleware/client?reload=false', // note that it reloads the page if hot module reloading fails.
-		path.resolve(__dirname, '../src/index'),
+		'@babel/polyfill',
+		path.resolve(__dirname, '../src/index.js'),
 		path.resolve(__dirname, '../src/index.scss'),
 	],
 	target: 'web',
@@ -26,10 +26,12 @@ export default {
 		]
 	},
 	devServer: {
-		contentBase: path.join(__dirname, '../dist'), // boolean | string | array, static file location
+		contentBase: path.join(__dirname, '../dist/index.html'), // boolean | string | array, static file location
 		compress: true, // enable gzip compression
 		hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
 		https: false, // true for self-signed, object for cert authority
+		historyApiFallback: true,
+		stats: 'errors-only'
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
@@ -50,7 +52,7 @@ export default {
 			{
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
-				loader: ['babel-loader', 'eslint-loader'],
+				loader: ['babel-loader'],
 			},
 			{
 				test: /\.scss$/,

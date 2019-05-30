@@ -10,6 +10,8 @@
 		"jest": true
 	},
 	"rules": {
+		"jsx-quotes": 0,
+		"quotes": ["error", "single"],
 		"no-console": 1,
 		"indent": ["error", "tab"],
 		"comma-dangle": 0,
