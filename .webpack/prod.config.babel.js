@@ -1,14 +1,16 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import WebpackMd5Hash from "webpack-md5-hash";
 
 export default {
 	mode: "production",
 	devtool: 'source-map',
-	entry: {
-		main: path.resolve(__dirname, '../src/index'),
-		vendor: path.resolve(__dirname, '../src/vendor')
-	},
+	entry: [
+		'@babel/polyfill',
+		path.resolve(__dirname, '../src/index.js'),
+		path.resolve(__dirname, '../src/index.scss'),
+	],
 	target: 'web',
 	output: {
 		path: path.resolve(__dirname, '../dist'),
@@ -16,7 +18,7 @@ export default {
 		filename: '[name].[chunkhash].js'
 	},
 	resolve: {
-		extensions: ['.js', '.jsx'],
+		extensions: ['.js', '.jsx', '.test'],
 		modules: [
 			'node_modules',
 			path.resolve(__dirname, '../src/app'),
@@ -43,12 +45,28 @@ export default {
 				minifyCSS: true,
 				minifyURLs: true
 			}
+		}),
+
+		new MiniCssExtractPlugin({
+			filename: '[name].[hash].css',
+			chunkFilename: '[id].[hash].css',
 		})
 	],
 	module: {
 		rules: [
 			{ test: /\.(js|jsx)$/, exclude: /node_modules/, loader: ['babel-loader'] },
-			{ test: /\.(css|scss)$/, loader: ['style-loader', 'css-loader'] },
+			{ test: /\.scss$/, enforce: 'pre', loader: ['import-glob-loader2'] },
+			{
+				test: /\.(sa|sc|c)ss$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+					},
+					'css-loader',
+					'postcss-loader',
+					'sass-loader',
+				],
+			},
 		]
 	}
 };
