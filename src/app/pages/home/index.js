@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
-import { setPageTitle, restoreAppState } from 'local-redux/global/actions';
+import { setPageTitle, restoreAppState } from '@redux/global/actions';
+import lifecycle from '@utils/lifecycle'
 import Home from './home';
 
 const mapStateToProps = ({ global }) => ({
@@ -16,4 +17,4 @@ const mergeProps = (stateProps, { dispatch }) => ({
 	},
 });
 
-export default connect(mapStateToProps, null, mergeProps)(Home);
+export default connect(mapStateToProps, null, mergeProps)(lifecycle({ didMount: 'didMount' })(Home));

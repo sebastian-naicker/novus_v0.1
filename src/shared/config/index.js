@@ -1,33 +1,26 @@
-import enhancedRoute from 'utils/enhanced-route';
+import enhancedRoute from 'utils/enhanced-route'
+
+export const paths = {
+	DASHBOARD: '/dashboard',
+	ROOT: '/'
+}
 
 export const routes = [
 	{
 		path: '/',
 		title: 'Home',
 		exact: true,
-		component: enhancedRoute('home'),
+		component: enhancedRoute('home')
 	},
 	{
-		path: '/about',
-		title: 'About',
+		path: '/dashboard',
+		title: 'Dashboard',
 		exact: true,
-		component: enhancedRoute('about'),
+		component: enhancedRoute('dashboard')
 	},
 	{
-		path: '/todo',
-		title: 'Todo',
-		exact: true,
-		component: enhancedRoute('todo'),
-	},
-	{
-		path: '/contact',
-		title: 'Contact Page',
-		exact: true,
-		component: enhancedRoute('contact'),
-	},
-	{
-		component: enhancedRoute('404'),
-	},
-];
+		component: enhancedRoute('404')
+	}
+]
 
-export default undefined;
+export default undefined

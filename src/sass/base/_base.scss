@@ -1,4 +1,5 @@
 @import "~bulma_scss";
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 
 $base-font-size: 16px;
 
@@ -20,4 +21,12 @@ body {
 	overflow: hidden;
 	min-height: 100vh;
 	padding: 15px;
+	display: flex;
+}
+
+#main-content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

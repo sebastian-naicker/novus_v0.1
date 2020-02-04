@@ -1,2 +1,2 @@
-export { defaul as actions } from './actions';
-export { defaul as reducers } from './reducer';
+export { default as actions } from './actions';
+export { default as reducers } from './reducer';

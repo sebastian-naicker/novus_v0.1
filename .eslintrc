@@ -1,9 +1,6 @@
 {
 	"root": true,
-	"extends": [
-		"essentials",
-		"react"
-	],
+	"extends": ["essentials", "react"],
 	"env": {
 		"browser": true,
 		"node": true,
@@ -13,9 +10,11 @@
 		"jsx-quotes": 0,
 		"quotes": ["error", "single"],
 		"no-console": 1,
+		"semi": "off",
 		"indent": ["error", "tab"],
 		"comma-dangle": 0,
 		"space-before-function-paren": 0,
-		"jsx-curly-spacing": 0
+		"jsx-curly-spacing": 0,
+		"no-magic-numbers": "warn"
 	}
 }

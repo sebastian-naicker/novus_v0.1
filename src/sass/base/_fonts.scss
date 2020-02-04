@@ -1,4 +1,18 @@
-@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+$font-sizes: (
+	'xxs': 8px,
+	'xs': 10px,
+	'sm': 12px,
+	'md': 14px,
+	'lg': 16px,
+	'xl': 21px,
+);
+
+$weights: (
+	'light': 300,
+	'normal': 400,
+	'semi-bold': 500,
+	'bold': 700,
+);
 
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
@@ -7,7 +21,6 @@ h4 { font-size: 1.4rem; }
 h5 { font-size: 1.2rem; }
 h6 { font-size: 1rem; }
 p	{ font-size: 0.9rem; }
-
 
 @media screen and (min-width: 601px) {
 	h1 { font-size: 5vw; }

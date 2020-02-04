@@ -1,36 +1,38 @@
 import React, { Component } from 'react';
 
-const isDefined = func => (func && typeof func === 'function');
-
-const lifecycle = ({
-	willMount,
-	didMount,
-	willUnmount,
-	willReceiveProps,
-	shouldUpdate,
-	willUpdate,
-} = {}) =>
-	WrapperComponent => class extends Component {
-		constructor(props) {
-			super(props);
-			this.componentWillMount = isDefined(willMount) ? this.componentWillMount : undefined;
-			this.componentDidMount = isDefined(didMount) ? this.componentDidMount : undefined;
-			this.componentWillReceiveProps = isDefined(willReceiveProps) ? this.componentWillReceiveProps : undefined;
-			this.shouldComponentUpdate = isDefined(shouldUpdate) ? this.shouldComponentUpdate : undefined;
-			this.componentWillUpdate = isDefined(willUpdate) ? this.componentWillUpdate : undefined;
-			this.componentWillUnmount = isDefined(willUnmount) ? this.componentWillUnmount : undefined;
+export default ({ didMount, willReceiveProps, shouldUpdate, willUpdate, didUpdate, willUnmount }) => WrappedComponent =>
+	class Lifecycle extends Component {
+		componentDidMount () {
+			if (!didMount) return;
+			this.props[didMount]();
 		}
 
-		componentWillMount() { willMount(); }
-		componentDidMount() { didMount(); }
-		componentWillReceiveProps() { willReceiveProps(); }
-		shouldComponentUpdate() { shouldUpdate(); }
-		componentWillUpdate() { willUpdate(); }
-		componentWillUnmount() { willUnmount(); }
+		componentWillReceiveProps (nextProps) {
+			if (!willReceiveProps) return;
+			this.props[willReceiveProps](nextProps);
+		}
 
-		render() {
-			return <WrapperComponent {...this.props} />;
+		shouldComponentUpdate (nextProps, nextState) {
+			if (!shouldUpdate) return true;
+			return this.props[shouldUpdate](nextProps, nextState);
+		}
+
+		componentWillUpdate (nextProps, nextState) {
+			if (!willUpdate) return;
+			this.props[willUpdate](nextProps, nextState);
+		}
+
+		componentDidUpdate (prevProps, prevState) {
+			if (!didUpdate) return;
+			this.props[didUpdate](prevProps, prevState);
+		}
+
+		componentWillUnmount () {
+			if (!willUnmount) return;
+			this.props[willUnmount]();
+		}
+
+		render () {
+			return <WrappedComponent {...this.props} />;
 		}
 	};
-
-export default lifecycle;

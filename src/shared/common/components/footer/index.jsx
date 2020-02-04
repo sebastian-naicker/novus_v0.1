@@ -1,10 +1,10 @@
 import React from 'react';
+import cc from 'utils/styles';
 
 const Footer = () => (
-	<footer>
-		<p>Copyright; 2017-2018</p>
+	<footer className={cc('footer')}>
+		<p className={cc('footer-content')}>Copyright &copy; 2020</p>
 	</footer>
 );
-
 
 export default Footer;

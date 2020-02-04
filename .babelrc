@@ -1,4 +1,23 @@
 {
 	"presets": ["@babel/env", "@babel/react"],
-	"plugins": ["syntax-dynamic-import", "@babel/plugin-proposal-class-properties"]
+	"plugins": [
+		"syntax-dynamic-import",
+		"@babel/plugin-proposal-class-properties",
+		[
+			"module-resolver",
+			{
+				"alias": {
+					"@assets": "./src/assets",
+					"@setup": "./src/app/setup",
+					"@components": "./src/shared/common/components",
+					"@svgs": "./src/assets/svgs",
+					"@redux": "./src/shared/local-redux",
+					"@utils": "./src/shared/utils",
+					"@pages": "./src/app/pages",
+					"@config": "./src/shared/config",
+					"@i18n": "./src/i18n"
+				}
+			}
+		]
+	]
 }

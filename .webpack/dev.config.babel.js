@@ -1,6 +1,10 @@
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import env from 'dotenv'
+
+const dotenv = env.config({ path: '.env' });
 
 export default {
 	mode: "development",
@@ -30,6 +34,12 @@ export default {
 		compress: true, // enable gzip compression
 		hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
 		https: false, // true for self-signed, object for cert authority
+		proxy: {
+			'/assets': {
+				target: 'http://localhost:8080',
+				pathRewrite: {'^/assets' : 'src/assets'}
+			}
+		},
 		historyApiFallback: true,
 		stats: 'errors-only'
 	},
@@ -41,6 +51,15 @@ export default {
 			template: 'src/index.html',
 			inject: true
 		}),
+
+		new webpack.DefinePlugin({
+			'process.env': {
+				NODE_ENV: JSON.stringify('dev'),
+				API_URL: JSON.stringify(dotenv.parsed.API_URL),
+			}
+		}),
+
+		new CopyWebpackPlugin([ { from: 'src/assets', to: 'assets' } ] ),
 
 		// enable debug mode
 		new webpack.LoaderOptionsPlugin({
@@ -60,6 +79,18 @@ export default {
 				loader: ['import-glob-loader2']
 			},
 			{
+				test: /\.svg$/,
+				use: [
+					{
+						loader: '@svgr/webpack',
+						options: {
+							native: false,
+							svgo: false
+						}
+					}
+				]
+			},
+			{
 				test: /\.scss$/,
 				loader: [
 					{ loader: 'style-loader' },
@@ -67,6 +98,16 @@ export default {
 					{ loader: 'postcss-loader' },
 					{ loader: 'sass-loader' }
 				]
+			},
+			{
+				test: /\.(css|scss)$/,
+				loader: 'sass-resources-loader',
+				options: {
+					resources: [
+						path.join(__dirname, '../src/sass/base/_colors.scss'),
+						path.join(__dirname, '../src/sass/base/_fonts.scss')
+					]
+				}
 			},
 		]
 	}

@@ -1,33 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import Logo from '@svgs/logo-1.svg'
 
-class Home extends Component {
-	componentDidMount() {
-		this.props.didMount();
-	}
 
-	componentWillUnmount() {
-		this.props.willUnmount();
-	}
-
-	render() {
-		const { title } = this.props;
-		return (
-			<div className='panel'>
-				<h1>{title}</h1>
-			</div>
-		);
-	}
-}
+const Home = ({ title }) => (
+	<div className='panel'>
+		<div className='logo-wrapper'>
+			<Logo />
+		</div>
+	</div>
+);
 
 Home.defaultProps = {
 	title: '',
-	willUnmount: () => {},
 };
 
 Home.propTypes = {
 	title: PropTypes.string,
-	willUnmount: PropTypes.func,
 };
 
 export default Home;

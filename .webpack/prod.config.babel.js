@@ -1,15 +1,19 @@
-import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import WebpackMd5Hash from "webpack-md5-hash";
+import path from 'path'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import WebpackMd5Hash from 'webpack-md5-hash'
+import webpack from 'webpack'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
+import env from 'dotenv'
+
+const dotenv = env.config({ path: '.env' })
 
 export default {
-	mode: "production",
-	devtool: 'source-map',
+	mode: 'production',
 	entry: [
 		'@babel/polyfill',
 		path.resolve(__dirname, '../src/index.js'),
-		path.resolve(__dirname, '../src/index.scss'),
+		path.resolve(__dirname, '../src/index.scss')
 	],
 	target: 'web',
 	output: {
@@ -19,11 +23,7 @@ export default {
 	},
 	resolve: {
 		extensions: ['.js', '.jsx', '.test'],
-		modules: [
-			'node_modules',
-			path.resolve(__dirname, '../src/app'),
-			path.resolve(__dirname, '../src/shared'),
-		]
+		modules: ['node_modules', path.resolve(__dirname, '../src/app'), path.resolve(__dirname, '../src/shared')]
 	},
 	plugins: [
 		// hash all bundled files
@@ -47,10 +47,19 @@ export default {
 			}
 		}),
 
+		new webpack.DefinePlugin({
+			'process.env': {
+				NODE_ENV: JSON.stringify('prod'),
+				API_URL: JSON.stringify(dotenv.parsed.API_URL)
+			}
+		}),
+
 		new MiniCssExtractPlugin({
 			filename: '[name].[hash].css',
-			chunkFilename: '[id].[hash].css',
-		})
+			chunkFilename: '[id].[hash].css'
+		}),
+
+		new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }])
 	],
 	module: {
 		rules: [
@@ -60,13 +69,46 @@ export default {
 				test: /\.(sa|sc|c)ss$/,
 				use: [
 					{
-						loader: MiniCssExtractPlugin.loader,
+						loader: MiniCssExtractPlugin.loader
 					},
 					'css-loader',
 					'postcss-loader',
-					'sass-loader',
-				],
+					'sass-loader'
+				]
 			},
+			{
+				test: /\.svg$/,
+				use: [
+					{
+						loader: '@svgr/webpack',
+						options: {
+							native: false,
+							svgo: false
+						}
+					}
+				]
+			},
+			{
+				test: /\.(png|jpg|gif)$/i,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							limit: 8192
+						}
+					}
+				]
+			},
+			{
+				test: /\.(css|scss)$/,
+				loader: 'sass-resources-loader',
+				options: {
+					resources: [
+						path.join(__dirname, '../src/sass/base/_colors.scss'),
+						path.join(__dirname, '../src/sass/base/_fonts.scss')
+					]
+				}
+			}
 		]
 	}
-};
+}
