@@ -1,1 +1,1 @@
-export default classname => `pr-${classname}`;
+export default classname => `ge-${classname}`;

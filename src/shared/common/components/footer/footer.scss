@@ -1,5 +1,22 @@
-.pr-footer {
+.ge-footer {
 	padding: 15px 0;
 	position: absolute;
 	bottom: 0;
+	width: 100%;
+
+	&-content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: map_get($font-sizes, 'sm');
+		font-weight: map_get($weights, 'bold');
+		color: $app-grey-dark;
+	}
+}
+
+.ge-icon {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin: 0 5px;
 }

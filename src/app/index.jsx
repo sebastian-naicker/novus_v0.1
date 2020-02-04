@@ -4,6 +4,7 @@ import PrivateRoute from '@utils/privateRoute'
 import history from '@setup/history'
 import { routes } from '@config'
 import { isLoggedIn } from '@utils/auth'
+import { Footer } from '@components';
 
 export default () => (
 	<Router history={history}>
@@ -21,5 +22,6 @@ export default () => (
 				</Switch>
 			</React.Fragment>
 		</div>
+		<Footer />
 	</Router>
 )
