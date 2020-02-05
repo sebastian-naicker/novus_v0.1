@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Logo from '@svgs/logo-1.svg'
+import Logo from '@svgs/logo-2.svg'
 
 
 const Home = ({ title }) => (

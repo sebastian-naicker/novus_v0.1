@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/svgs/lightening.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svgs/logo-color.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svgs/potion.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/en/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/en/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svgs/logo-2.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appveyor.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/android-chrome-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/android-chrome-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/svgs/logo-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svgs/logo-1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/components/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/components/footer/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/components/footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/components/footer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.2" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/svgs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -96,19 +93,19 @@
     <property name="settings.editor.selected.configurable" value="settings.webpack" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/svgs" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/shared/common/components" />
+      <recent name="$PROJECT_DIR$/src/favicon" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/svgs" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="D:\DEV\PERSONAL\Projects\novus_v0.1\src\api\fetch" />
       <recent name="D:\DEV\PERSONAL\Projects\novus_v0.1\src\app\bootstrap" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/assets/svgs" />
-      <recent name="$PROJECT_DIR$/src/shared/common/components" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/favicon" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.All tests">
@@ -235,7 +232,8 @@
       <workItem from="1580221512307" duration="15000" />
       <workItem from="1580225732912" duration="2199000" />
       <workItem from="1580803806137" duration="3883000" />
-      <workItem from="1580829335006" duration="1019000" />
+      <workItem from="1580829335006" duration="2885000" />
+      <workItem from="1580910142625" duration="1042000" />
     </task>
     <servers />
   </component>
