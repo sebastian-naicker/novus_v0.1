@@ -4,11 +4,12 @@ import PrivateRoute from '@utils/privateRoute'
 import history from '@setup/history'
 import { routes } from '@config'
 import { isLoggedIn } from '@utils/auth'
-import { Footer } from '@components';
+import { Footer, Header } from '@components';
 
 export default () => (
 	<Router history={history}>
 		<div id='header-portal' />
+		<Header />
 		<div id='main-content'>
 			<React.Fragment>
 				<Switch>

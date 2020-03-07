@@ -50,7 +50,7 @@ export default {
 		new webpack.DefinePlugin({
 			'process.env': {
 				NODE_ENV: JSON.stringify('prod'),
-				API_URL: JSON.stringify(dotenv.parsed.API_URL)
+				API_URL: JSON.stringify(dotenv.parsed ? dotenv.parsed.API_URL : '')
 			}
 		}),
 
