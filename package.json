@@ -8,8 +8,8 @@
     "security-check": "npm audit",
     "localtunnel": "lt --port 3003",
     "clean:dist": "rimraf ./dist && mkdir dist",
-    "prerelease": "npm-run-all clean:dist",
-    "release": "webpack -p --config .webpack/prod.config.babel.js"
+    "prebuild": "npm-run-all clean:dist",
+    "build": "webpack -p --config .webpack/prod.config.babel.js"
   },
   "author": "Sebastian Naicker",
   "license": "MIT",
