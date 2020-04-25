@@ -7,7 +7,11 @@
 			"module-resolver",
 			{
 				"alias": {
+					"@root": "./src",
 					"@assets": "./src/assets",
+					"@shared": "./src/shared",
+					"@store": "./src/shared/store",
+					"@app-enhancements": "./src/shared/utils/enhanced-components",
 					"@setup": "./src/app/setup",
 					"@components": "./src/shared/common/components",
 					"@svgs": "./src/assets/svgs",

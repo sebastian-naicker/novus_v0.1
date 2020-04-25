@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { routes } from 'config';
+// import { Link } from 'react-router-dom';
+// import { routes } from 'config';
 
 const Header = () => (
 	<header>
 		<nav>
-			Header
+			<span />
 		</nav>
 	</header>
 );

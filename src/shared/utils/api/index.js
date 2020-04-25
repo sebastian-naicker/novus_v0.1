@@ -5,4 +5,8 @@ export const callApi = request => {
 	return request(requestWrapper(authToken));
 };
 
+export const apiFactory = (request, payload, resolve) =>
+	callApi(request)(payload)
+		.then(resolve)
+
 export default callApi;

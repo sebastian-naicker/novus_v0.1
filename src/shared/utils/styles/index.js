@@ -1,1 +1,1 @@
-export default classname => `ge-${classname}`;
+export default classname => `nvs-${classname}`;

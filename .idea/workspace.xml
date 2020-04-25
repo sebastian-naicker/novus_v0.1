@@ -2,9 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/api/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/store/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/store/app/users/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/utils/enhanced-components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/utils/enhanced-components/withStore/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.webpack/dev.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/dev.config.babel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.webpack/prod.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/prod.config.babel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svgs/loader.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svgs/loader.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/components/footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/components/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/loader/loader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/components/loader/loader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/local-redux/global/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/local-redux/global/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/local-redux/global/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/local-redux/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/utils/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/utils/lifecycle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/lifecycle/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/utils/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.alias.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +46,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/shared/utils/storage/localStorage/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/shared/local-redux/global/reducer.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/setup/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/shared/utils/enhanced-route/index.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/shared/config/index.js" root0="FORCE_HIGHLIGHTING" />
@@ -55,6 +80,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_ANALYSIS_RESULTS_SCOPE" value="All project files" />
@@ -217,7 +243,11 @@
       <workItem from="1581987958076" duration="616000" />
       <workItem from="1582039340461" duration="11000" />
       <workItem from="1583580105798" duration="178000" />
-      <workItem from="1587208870625" duration="41000" />
+      <workItem from="1587208870625" duration="865000" />
+      <workItem from="1587657533100" duration="602000" />
+      <workItem from="1587658146461" duration="6690000" />
+      <workItem from="1587715593982" duration="12000" />
+      <workItem from="1587830500003" duration="6540000" />
     </task>
     <servers />
   </component>
@@ -266,10 +296,18 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="717" y="292" width="475" height="529" key="#ESLint" timestamp="1587831546498">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="717" y="292" width="475" height="529" key="#ESLint/0.27.1920.1053@0.27.1920.1053" timestamp="1587831546498" />
     <state x="2613" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580829607475">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2613" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580829607475" />
+    <state x="225" y="36" width="863" height="1041" key="CommitChangelistDialog2" timestamp="1587658237967">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="225" y="36" width="863" height="1041" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1587658237967" />
     <state x="2260" y="307" width="424" height="491" key="FileChooserDialogImpl" timestamp="1580914628235">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -278,10 +316,18 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1981" y="181" width="992" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580227455406" />
-    <state x="2553" y="272" width="654" height="562" key="find.popup" timestamp="1579018033343">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="390" y="284" width="564" height="540" key="StructurePopup" timestamp="1587658260015">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="2553" y="272" width="654" height="562" key="find.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1579018033343" />
+    <state x="390" y="284" width="564" height="540" key="StructurePopup/0.27.1920.1053@0.27.1920.1053" timestamp="1587658260015" />
+    <state x="256" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1587658242677">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="256" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1587658242677" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1587830995955">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1587830995955" />
   </component>
   <component name="masterDetails">
     <states>
