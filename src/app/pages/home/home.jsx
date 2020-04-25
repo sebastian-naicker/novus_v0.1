@@ -1,45 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect } from 'react'
 import Logo from '@svgs/logo-2.svg'
-import { withStore } from '@app-enhancements';
-import { getUsers } from '@shared/api/users';
+import UserList from '@components/userList'
+import { withStore } from '@app-enhancements'
+import { getUsers } from '@shared/api/users'
+import { Link } from 'react-router-dom';
 
 const Home = (props) => {
-	const [users, setUsers] = useState([])
-
-	const handleClick = async () => {
-		const data = await getUsers(props, true)
-		console.log('users', data)
-	}
-
 	useEffect(() => {
-		if (props.hasOwnProperty('users')) {
-			setUsers(props.users.userList)
-		}
-	}, [props])
+		if (props.users.userList[0]) return
+		getUsers(props, true)
+	}, [])
 
 	return (
 		<div className='panel'>
-			{console.log(props)}
 			<div className='logo-wrapper'>
 				<Logo />
 			</div>
-			<ul>
-				{users.map(user => (
-					<li key={user.id}>{user}</li>
-				))}
-			</ul>
-			<button onClick={handleClick}>trigger state update</button>
+			<Link to='/about'>about</Link>
+			<UserList />
+			<button>trigger state update</button>
 		</div>
 	);
 }
 
-Home.defaultProps = {
-	title: '',
-};
-
-Home.propTypes = {
-	title: PropTypes.string,
-};
-
-export default withStore(Home);
+export default withStore(Home)

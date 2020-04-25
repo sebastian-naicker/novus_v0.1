@@ -2,35 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shared/api/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/store/app/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/store/app/users/state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/utils/enhanced-components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/utils/enhanced-components/withStore/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/about/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/api/users/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/common/components/userList/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/common/components/userList/userList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.webpack/dev.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/dev.config.babel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.webpack/prod.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/prod.config.babel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svgs/loader.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svgs/loader.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/components/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/components/footer/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/components/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/components/loader/loader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/components/loader/loader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/local-redux/global/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/local-redux/global/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/local-redux/global/reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/local-redux/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/lifecycle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/lifecycle/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/styles/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vendor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.alias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/api/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/api/users/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/factories/action-factory/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/factories/action-factory/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,19 +89,19 @@
     <property name="settings.editor.selected.configurable" value="settings.webpack" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/api/users" />
+      <recent name="$PROJECT_DIR$/src/assets/svgs" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="D:\DEV\PERSONAL\Projects\novus_v0.1\src\api\fetch" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/svgs" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/shared/common/components" />
       <recent name="$PROJECT_DIR$/src/favicon" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/svgs" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="D:\DEV\PERSONAL\Projects\novus_v0.1\src\api\fetch" />
-      <recent name="D:\DEV\PERSONAL\Projects\novus_v0.1\src\app\bootstrap" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.All tests">
@@ -247,7 +227,7 @@
       <workItem from="1587657533100" duration="602000" />
       <workItem from="1587658146461" duration="6690000" />
       <workItem from="1587715593982" duration="12000" />
-      <workItem from="1587830500003" duration="6540000" />
+      <workItem from="1587830500003" duration="11205000" />
     </task>
     <servers />
   </component>
@@ -324,6 +304,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="256" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1587658242677" />
+    <state x="670" y="283" width="579" height="540" key="find.popup" timestamp="1587837122377">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="670" y="283" width="579" height="540" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1587837122377" />
     <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1587830995955">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

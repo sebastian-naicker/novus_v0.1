@@ -13,10 +13,10 @@ export const routes = [
 		component: enhancedRoute('home')
 	},
 	{
-		path: '/dashboard',
-		title: 'Dashboard',
+		path: '/about',
+		title: 'About',
 		exact: true,
-		component: enhancedRoute('dashboard')
+		component: enhancedRoute('about')
 	},
 	{
 		component: enhancedRoute('404')

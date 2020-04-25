@@ -1,6 +1,6 @@
-const actionFactory = (type, payload) => ({
-	type,
-	payload
-});
+const actionFactory = (type, payload) => {
+	console.info(`store/${type}`, { type, payload })
+	return { ...payload }
+};
 
 export default actionFactory;
