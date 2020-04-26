@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route, Router } from 'react-router-dom'
 import PrivateRoute from '@utils/privateRoute'
 import history from '@setup/history'
-import { routes } from '@config'
+import { routes } from 'routes'
 import { isLoggedIn } from '@utils/auth'
 import { Footer, Header } from '@components';
 

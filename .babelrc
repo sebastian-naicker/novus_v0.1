@@ -12,12 +12,12 @@
 					"@shared": "./src/shared",
 					"@store": "./src/shared/store",
 					"@app-enhancements": "./src/shared/utils/enhanced-components",
-					"@setup": "./src/app/setup",
-					"@components": "./src/shared/common/components",
+					"@setup": "./src/setup",
+					"@components": "./src/shared/components",
 					"@svgs": "./src/assets/svgs",
 					"@redux": "./src/shared/local-redux",
 					"@utils": "./src/shared/utils",
-					"@pages": "./src/app/pages",
+					"@pages": "./src/pages",
 					"@config": "./src/shared/config",
 					"@i18n": "./src/i18n"
 				}

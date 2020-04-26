@@ -1,17 +1,15 @@
-import React from 'react';
-import Loadable from 'react-loadable';
-import Loading from 'common/components/loader';
+import React, { lazy, Suspense } from 'react';
+import Loading from '@components/loader';
 
 const enhancedRoute = name => {
-	const Component = Loadable({ // eslint-disable-line
-		loader: () => import(`pages/${name}`),
-		loading: Loading,
-	});
+	const Component = lazy(() => import(`../../../pages/${name}`))
 
 	return class extends React.Component {
 		render() {
 			return (
-				<Component />
+				<Suspense fallback={<Loading />}>
+					<Component />
+				</Suspense>
 			);
 		}
 	};

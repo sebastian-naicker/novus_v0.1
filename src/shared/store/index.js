@@ -1,12 +1,13 @@
 import React, { createContext, useState } from 'react'
-import app from './app'
+import state from './state'
 import App from '@root/app'
 import Loader from '@components/loader';
 
-export const StoreContext = createContext({ ...app })
+const initialState = { ...state }
 
+export const StoreContext = createContext(initialState)
 export default () => {
-	const [appState, setState] = useState({ ...app })
+	const [appState, setState] = useState(initialState)
 	const [appLoading, setAppLoading] = useState(false)
 
 	const triggerAsync = (on = true) => {

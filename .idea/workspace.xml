@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/404/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/about/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/setup/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setup/history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/setup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setup/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/footer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/header/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/loader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/loader/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/loader/loader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/loader/loader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/userList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/userList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/components/userList/userList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/store/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/state/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/store/app/users/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/state/users/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/utils/enhanced-route/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/enhanced-route/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.alias.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +46,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/shared/utils/storage/localStorage/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/setup/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/setup/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/shared/utils/enhanced-route/index.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/shared/config/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/shared/routes/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/shared/utils/storage/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/pages/home/home.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/home/home.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -83,11 +110,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/shared/api/users" />
       <recent name="$PROJECT_DIR$/src/assets/svgs" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="D:\DEV\PERSONAL\Projects\novus_v0.1\src\api\fetch" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/svgs" />
@@ -220,7 +247,7 @@
       <workItem from="1587657533100" duration="602000" />
       <workItem from="1587658146461" duration="6690000" />
       <workItem from="1587715593982" duration="12000" />
-      <workItem from="1587830500003" duration="13108000" />
+      <workItem from="1587830500003" duration="14983000" />
     </task>
     <servers />
   </component>
