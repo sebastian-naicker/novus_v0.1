@@ -18,7 +18,6 @@ const Home = (props) => {
 			</div>
 			<Link to='/about'>about</Link>
 			<UserList />
-			<button>trigger state update</button>
 		</div>
 	);
 }
