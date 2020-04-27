@@ -8,13 +8,13 @@
 			{
 				"alias": {
 					"@root": "./src",
-					"@assets": "./src/assets",
+					"@assets": "./public/assets",
 					"@shared": "./src/shared",
 					"@store": "./src/shared/store",
 					"@hocs": "./src/shared/higher-order-components",
 					"@setup": "./src/setup",
 					"@components": "./src/shared/components",
-					"@svgs": "./src/assets/svgs",
+					"@svgs": "./public/assets/svgs",
 					"@redux": "./src/shared/local-redux",
 					"@utils": "./src/shared/utils",
 					"@pages": "./src/pages",

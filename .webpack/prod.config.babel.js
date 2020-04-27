@@ -2,9 +2,10 @@ import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import WebpackMd5Hash from 'webpack-md5-hash'
-import webpack from 'webpack'
+import { DefinePlugin } from 'webpack'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import env from 'dotenv'
+import rules from './rules.config.babel'
 
 const dotenv = env.config({ path: '.env' })
 
@@ -17,13 +18,13 @@ export default {
 	],
 	target: 'web',
 	output: {
-		path: path.resolve(__dirname, '../dist'),
+		path: path.resolve(__dirname, '../build'),
 		publicPath: '/',
 		filename: '[name].[chunkhash].js'
 	},
 	resolve: {
 		extensions: ['.js', '.jsx', '.test'],
-		modules: ['node_modules', path.resolve(__dirname, '../src/app'), path.resolve(__dirname, '../src/shared')]
+		modules: ['node_modules', path.resolve(__dirname, '../src/shared')]
 	},
 	plugins: [
 		// hash all bundled files
@@ -47,7 +48,7 @@ export default {
 			}
 		}),
 
-		new webpack.DefinePlugin({
+		new DefinePlugin({
 			'process.env': {
 				NODE_ENV: JSON.stringify('production'),
 				API_URL: JSON.stringify(dotenv.parsed ? dotenv.parsed.API_URL : process.env.API_URL )
@@ -63,8 +64,7 @@ export default {
 	],
 	module: {
 		rules: [
-			{ test: /\.(js|jsx)$/, exclude: /node_modules/, loader: ['babel-loader'] },
-			{ test: /\.scss$/, enforce: 'pre', loader: ['import-glob-loader2'] },
+			...rules,
 			{
 				test: /\.(sa|sc|c)ss$/,
 				use: [
@@ -74,18 +74,6 @@ export default {
 					'css-loader',
 					'postcss-loader',
 					'sass-loader'
-				]
-			},
-			{
-				test: /\.svg$/,
-				use: [
-					{
-						loader: '@svgr/webpack',
-						options: {
-							native: false,
-							svgo: false
-						}
-					}
 				]
 			},
 			{
@@ -99,16 +87,6 @@ export default {
 					}
 				]
 			},
-			{
-				test: /\.(css|scss)$/,
-				loader: 'sass-resources-loader',
-				options: {
-					resources: [
-						path.join(__dirname, '../src/sass/_colors.scss'),
-						path.join(__dirname, '../src/sass/_fonts.scss')
-					]
-				}
-			}
 		]
 	}
 }

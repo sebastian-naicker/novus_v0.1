@@ -2,22 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.webpack/rules.config.babel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/sebastiann.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/sebastiann.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.webpack/dev.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/dev.config.babel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.webpack/prod.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/prod.config.babel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/base/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/enhanced-components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/higher-order-components/enhanced-components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/enhanced-components/withStore/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/higher-order-components/enhanced-components/withStore/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/enhanced-route/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/higher-order-components/enhanced-route/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/lifecycle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/higher-order-components/lifecycle/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/privateRoute/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/privateRoute/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/android-chrome-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/android-chrome-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/site.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svgs/lightening.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/lightening.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svgs/loader.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/loader.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svgs/logo-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/logo-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svgs/logo-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/logo-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svgs/logo-color.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/logo-color.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svgs/potion.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/potion.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.alias.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,15 +99,15 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.webpack" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/shared/components" />
       <recent name="$PROJECT_DIR$/src/shared/higher-order-components" />
       <recent name="$PROJECT_DIR$/src/sass" />
       <recent name="$PROJECT_DIR$/src/shared" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/svgs" />
@@ -235,7 +240,7 @@
       <workItem from="1587657533100" duration="602000" />
       <workItem from="1587658146461" duration="6690000" />
       <workItem from="1587715593982" duration="12000" />
-      <workItem from="1587830500003" duration="15913000" />
+      <workItem from="1587830500003" duration="17337000" />
     </task>
     <servers />
   </component>
@@ -300,9 +305,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2260" y="307" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580914628235" />
-    <state x="1981" y="181" width="992" height="737" key="SettingsEditor" timestamp="1580227455406">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="61" y="203" width="992" height="737" key="SettingsEditor" timestamp="1587946704892">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="61" y="203" width="992" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1587946704892" />
     <state x="1981" y="181" width="992" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580227455406" />
     <state x="390" y="284" width="564" height="540" key="StructurePopup" timestamp="1587658260015">
       <screen x="0" y="27" width="1920" height="1053" />

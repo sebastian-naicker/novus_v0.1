@@ -1,8 +1,9 @@
 import path from 'path';
-import webpack from 'webpack';
+import { DefinePlugin, LoaderOptionsPlugin, HotModuleReplacementPlugin } from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import env from 'dotenv'
+import rules from './rules.config.babel'
 
 const dotenv = env.config({ path: '.env' });
 
@@ -17,7 +18,7 @@ export default {
 	],
 	target: 'web',
 	output: {
-		path: path.resolve(__dirname, '../src'),
+		path: path.resolve(__dirname, '../public'),
 		publicPath: '/',
 		filename: 'bundle.js'
 	},
@@ -25,90 +26,47 @@ export default {
 		extensions: ['.js', '.jsx', '.test'],
 		modules: [
 			'node_modules',
-			path.resolve(__dirname, '../src/app'),
 			path.resolve(__dirname, '../src/shared'),
 		]
 	},
 	devServer: {
-		contentBase: path.join(__dirname, '../dist/index.html'), // boolean | string | array, static file location
+		contentBase: path.join(__dirname, '../public/index.html'), // boolean | string | array, static file location
 		compress: true, // enable gzip compression
 		hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
 		https: false, // true for self-signed, object for cert authority
 		proxy: {
 			'/assets': {
 				target: 'http://localhost:8080',
-				pathRewrite: {'^/assets' : 'src/assets'}
+				pathRewrite: {'^/assets' : 'public/assets'}
 			}
 		},
 		historyApiFallback: true,
 		stats: 'errors-only'
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
+		new HotModuleReplacementPlugin(),
 
 		// handle html files
 		new HtmlWebpackPlugin({
-			template: 'src/index.html',
+			template: 'public/index.html',
 			inject: true
 		}),
 
-		new webpack.DefinePlugin({
+		new DefinePlugin({
 			'process.env': {
 				NODE_ENV: JSON.stringify('development'),
 				API_URL: JSON.stringify(dotenv.parsed ? dotenv.parsed.API_URL : process.env.API_URL ),
 			}
 		}),
 
-		new CopyWebpackPlugin([ { from: 'src/assets', to: 'assets' } ] ),
+		new CopyWebpackPlugin([ { from: 'public/assets', to: 'assets' } ] ),
 
 		// enable debug mode
-		new webpack.LoaderOptionsPlugin({
+		new LoaderOptionsPlugin({
 			debug: true
 		})
 	],
 	module: {
-		rules: [
-			{
-				test: /\.(js|jsx)$/,
-				exclude: /node_modules/,
-				loader: ['babel-loader'],
-			},
-			{
-				test: /\.scss$/,
-				enforce: 'pre',
-				loader: ['import-glob-loader2']
-			},
-			{
-				test: /\.svg$/,
-				use: [
-					{
-						loader: '@svgr/webpack',
-						options: {
-							native: false,
-							svgo: false
-						}
-					}
-				]
-			},
-			{
-				test: /\.scss$/,
-				loader: [
-					{ loader: 'style-loader' },
-					{ loader: 'css-loader' },
-					{ loader: 'postcss-loader' },
-					{ loader: 'sass-loader' }
-				]
-			},
-			{
-				test: /\.(css|scss)$/,
-				loader: 'sass-resources-loader',
-				options: {
-					resources: [
-						path.join(__dirname, '../src/sass/_colors.scss'),
-						path.join(__dirname, '../src/sass/_fonts.scss')
-					]
-				}
-			},
-		]
+		rules: [ ...rules ],
 	}
 };

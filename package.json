@@ -6,7 +6,7 @@
     "start": "npm-run-all --parallel start:server",
     "start:server": "webpack-dev-server --config .webpack/dev.config.babel.js",
     "security-check": "npm audit",
-    "clean:dist": "rimraf ./dist && mkdir dist",
+    "clean:dist": "rimraf ./build && mkdir build",
     "prebuild": "npm-run-all clean:dist",
     "build": "webpack -p --config .webpack/prod.config.babel.js"
   },
