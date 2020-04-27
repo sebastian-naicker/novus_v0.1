@@ -58,6 +58,6 @@ typings/
 .env
 
 # build files
-dist/
+build/
 
 .vscode/
