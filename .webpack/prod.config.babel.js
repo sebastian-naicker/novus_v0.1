@@ -20,7 +20,8 @@ export default {
 	output: {
 		path: path.resolve(__dirname, '../build'),
 		publicPath: '/',
-		filename: '[name].[chunkhash].js'
+		filename: 'static/js/bundle.[hash].js',
+		chunkFilename: 'static/js/chunk.[id].js'
 	},
 	resolve: {
 		extensions: ['.js', '.jsx', '.test'],
@@ -32,7 +33,7 @@ export default {
 
 		// handle html files
 		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, '../src/index.html'),
+			template: path.resolve(__dirname, '../public/index.html'),
 			inject: true,
 			minify: {
 				removeComments: true,
@@ -56,11 +57,11 @@ export default {
 		}),
 
 		new MiniCssExtractPlugin({
-			filename: '[name].[hash].css',
-			chunkFilename: '[id].[hash].css'
+			filename: 'static/css/[name].[hash].css',
+			chunkFilename: 'static/css/chunk.[id].css'
 		}),
 
-		new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }])
+		new CopyWebpackPlugin([{ from: 'public/assets', to: 'assets' }])
 	],
 	module: {
 		rules: [

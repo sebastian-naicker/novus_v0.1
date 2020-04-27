@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.webpack/rules.config.babel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/sebastiann.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/sebastiann.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.webpack/dev.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/dev.config.babel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.webpack/prod.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/prod.config.babel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/android-chrome-192x192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/android-chrome-512x512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/apple-touch-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicon-16x16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicon-32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/site.webmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svgs/lightening.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/lightening.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svgs/loader.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/loader.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svgs/logo-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/logo-1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svgs/logo-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/logo-2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svgs/logo-color.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/logo-color.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svgs/potion.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/svgs/potion.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.alias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static.json" beforeDir="false" afterPath="$PROJECT_DIR$/static.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +221,7 @@
       <workItem from="1587657533100" duration="602000" />
       <workItem from="1587658146461" duration="6690000" />
       <workItem from="1587715593982" duration="12000" />
-      <workItem from="1587830500003" duration="17337000" />
+      <workItem from="1587830500003" duration="18167000" />
     </task>
     <servers />
   </component>
