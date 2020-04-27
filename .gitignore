@@ -60,4 +60,6 @@ typings/
 # build files
 build/
 
+# IDE
 .vscode/
+.idea/
