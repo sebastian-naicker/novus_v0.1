@@ -1,23 +1,13 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Logo from '@svgs/logo-2.svg'
-import UserList from '@components/userList'
-import { withStore } from '@app-enhancements'
-import { getUsers } from '@shared/api/users'
-import { Link } from 'react-router-dom';
+import { withStore } from '@hocs/enhanced-components'
 
-const Home = (props) => {
-	useEffect(() => {
-		if (props.users.userList[0]) return
-		getUsers(props, true)
-	}, [])
-
+const Home = () => {
 	return (
 		<div className='panel'>
 			<div className='logo-wrapper'>
 				<Logo />
 			</div>
-			<Link to='/about'>about</Link>
-			<UserList />
 		</div>
 	);
 }

@@ -104,8 +104,8 @@ export default {
 				loader: 'sass-resources-loader',
 				options: {
 					resources: [
-						path.join(__dirname, '../src/sass/base/_colors.scss'),
-						path.join(__dirname, '../src/sass/base/_fonts.scss')
+						path.join(__dirname, '../src/sass/_colors.scss'),
+						path.join(__dirname, '../src/sass/_fonts.scss')
 					]
 				}
 			}

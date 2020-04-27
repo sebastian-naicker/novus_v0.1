@@ -1,4 +1,4 @@
-import enhancedRoute from 'utils/enhanced-route'
+import enhancedRoute from '@hocs/enhanced-route'
 
 export const paths = {
 	DASHBOARD: '/dashboard',

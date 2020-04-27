@@ -11,7 +11,7 @@
 					"@assets": "./src/assets",
 					"@shared": "./src/shared",
 					"@store": "./src/shared/store",
-					"@app-enhancements": "./src/shared/utils/enhanced-components",
+					"@hocs": "./src/shared/higher-order-components",
 					"@setup": "./src/setup",
 					"@components": "./src/shared/components",
 					"@svgs": "./src/assets/svgs",

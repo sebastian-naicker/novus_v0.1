@@ -7,7 +7,7 @@ module.exports = {
 			'@setup': path.resolve(__dirname, './src/setup'),
 			'@shared': path.resolve(__dirname, './src/shared'),
 			'@store': path.resolve(__dirname, './src/shared/store'),
-			'@app-enhancements': path.resolve(__dirname, './src/shared/utils/enhanced-components'),
+			'@hocs': path.resolve(__dirname, './src/shared/higher-order-components'),
 			'@assets': path.resolve(__dirname, './src/assets'),
 			'@components': path.resolve(__dirname, './src/shared/components'),
 			'@svgs': path.resolve(__dirname, './src/assets/svgs'),
