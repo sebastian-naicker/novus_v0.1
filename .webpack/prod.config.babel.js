@@ -1,13 +1,6 @@
 import path from 'path'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
-import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import WebpackMd5Hash from 'webpack-md5-hash'
-import { DefinePlugin } from 'webpack'
-import CopyWebpackPlugin from 'copy-webpack-plugin'
-import env from 'dotenv'
-import rules from './rules.config.babel'
-
-const dotenv = env.config({ path: '.env' })
+import { babel_loader, glob_loader, sass, sass_resources, svgr, extract_css, url_loader } from './rules'
+import { md5_hash, html_webpack, copy_webpack, extract_css_plugin, define } from './plugins';
 
 export default {
 	mode: 'production',
@@ -27,67 +20,6 @@ export default {
 		extensions: ['.js', '.jsx', '.test'],
 		modules: ['node_modules', path.resolve(__dirname, '../src/shared')]
 	},
-	plugins: [
-		// hash all bundled files
-		new WebpackMd5Hash(),
-
-		// handle html files
-		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, '../public/index.html'),
-			inject: true,
-			minify: {
-				removeComments: true,
-				collapseWhitespace: true,
-				removeRedundantAttributes: true,
-				useShortDoctype: true,
-				removeEmptyAttributes: true,
-				removeStyleLinkAttributes: true,
-				keepClosingSlash: true,
-				minifyJS: true,
-				minifyCSS: true,
-				minifyURLs: true
-			}
-		}),
-
-		new DefinePlugin({
-			'process.env': {
-				NODE_ENV: JSON.stringify('production'),
-				API_URL: JSON.stringify(dotenv.parsed ? dotenv.parsed.API_URL : process.env.API_URL )
-			}
-		}),
-
-		new MiniCssExtractPlugin({
-			filename: 'static/css/[name].[hash].css',
-			chunkFilename: 'static/css/chunk.[id].css'
-		}),
-
-		new CopyWebpackPlugin([{ from: 'public/assets', to: 'assets' }])
-	],
-	module: {
-		rules: [
-			...rules,
-			{
-				test: /\.(sa|sc|c)ss$/,
-				use: [
-					{
-						loader: MiniCssExtractPlugin.loader
-					},
-					'css-loader',
-					'postcss-loader',
-					'sass-loader'
-				]
-			},
-			{
-				test: /\.(png|jpg|gif)$/i,
-				use: [
-					{
-						loader: 'url-loader',
-						options: {
-							limit: 8192
-						}
-					}
-				]
-			},
-		]
-	}
+	plugins: [md5_hash(), html_webpack(true), extract_css_plugin(), define('production'), copy_webpack()],
+	module: { rules: [babel_loader, glob_loader, svgr, sass, sass_resources, extract_css, url_loader] }
 }

@@ -1,6 +1,22 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-export default () => new HtmlWebpackPlugin({
+const prod = {
+	minify: {
+		removeComments: true,
+		collapseWhitespace: true,
+		removeRedundantAttributes: true,
+		useShortDoctype: true,
+		removeEmptyAttributes: true,
+		removeStyleLinkAttributes: true,
+		keepClosingSlash: true,
+		minifyJS: true,
+		minifyCSS: true,
+		minifyURLs: true
+	}
+}
+
+export default (isProd) => new HtmlWebpackPlugin({
 	template: 'public/index.html',
-	inject: true
+	inject: true,
+	...isProd && { ...prod }
 })
