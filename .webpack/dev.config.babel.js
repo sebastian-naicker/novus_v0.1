@@ -3,7 +3,7 @@ import { DefinePlugin, LoaderOptionsPlugin, HotModuleReplacementPlugin } from 'w
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import env from 'dotenv'
-import rules from './rules.config.babel'
+import { babel_loader, glob_loader, sass, sass_resources, svgr } from './rules'
 
 const dotenv = env.config({ path: '.env' });
 
@@ -67,6 +67,6 @@ export default {
 		})
 	],
 	module: {
-		rules: [ ...rules ],
+		rules: [babel_loader, glob_loader, svgr, sass, sass_resources],
 	}
 };

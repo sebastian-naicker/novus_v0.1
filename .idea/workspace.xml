@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:test" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.webpack/rules/babel-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.webpack/rules/glob-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.webpack/rules/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.webpack/rules/sass-resources.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.webpack/rules/sass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.webpack/rules/svgr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/sebastiann.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/sebastiann.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.webpack/dev.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/dev.config.babel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.webpack/rules.config.babel.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +61,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/shared/utils/storage/localStorage/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/setup/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/shared/higher-order-components/enhanced-route/index.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/shared/routes/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/shared/utils/storage/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/shared/routes/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/pages/home/home.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/shared/higher-order-components/enhanced-route/index.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/setup/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/shared/utils/storage/localStorage/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -219,7 +263,13 @@
       <workItem from="1587657533100" duration="602000" />
       <workItem from="1587658146461" duration="6690000" />
       <workItem from="1587715593982" duration="12000" />
-      <workItem from="1587830500003" duration="18626000" />
+      <workItem from="1587830500003" duration="19911000" />
+      <workItem from="1588079858331" duration="710000" />
+      <workItem from="1589188597817" duration="664000" />
+      <workItem from="1589200202608" duration="1016000" />
+      <workItem from="1589206153662" duration="879000" />
+      <workItem from="1590059977483" duration="627000" />
+      <workItem from="1590258225858" duration="2331000" />
     </task>
     <servers />
   </component>
@@ -267,28 +317,59 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/sebastiann/workspace/PERSONAL/PROJECTS/novus_v0.1/.webpack" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="717" y="292" width="475" height="529" key="#ESLint" timestamp="1587831546498">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="717" y="292" width="475" height="529" key="#ESLint/0.27.1920.1053@0.27.1920.1053" timestamp="1587831546498" />
-    <state x="2613" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580829607475">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2613" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580829607475" />
     <state x="225" y="36" width="863" height="1041" key="CommitChangelistDialog2" timestamp="1587658237967">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="225" y="36" width="863" height="1041" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1587658237967" />
-    <state x="2260" y="307" width="424" height="491" key="FileChooserDialogImpl" timestamp="1580914628235">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="100" y="127" width="1720" height="853" key="DiffContextDialog" timestamp="1590262283330">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="2260" y="307" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580914628235" />
+    <state x="100" y="127" width="1720" height="853" key="DiffContextDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590262283330" />
     <state x="61" y="203" width="992" height="737" key="SettingsEditor" timestamp="1587946704892">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="61" y="203" width="992" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1587946704892" />
-    <state x="1981" y="181" width="992" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580227455406" />
     <state x="390" y="284" width="564" height="540" key="StructurePopup" timestamp="1587658260015">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
