@@ -3,6 +3,7 @@ import i18n from '@i18n'
 import cc from '@utils/styles'
 import PotionIcon from '@svgs/potion.svg'
 import LightingIcon from '@svgs/lightening.svg'
+import SunIcon from '@svgs/sun.svg'
 
 const Footer = () => (
 	<footer className={cc('footer')}>
@@ -12,6 +13,10 @@ const Footer = () => (
 				<PotionIcon />
 			</span>
 			{i18n.by}{' '}
+			<span className={cc('icon')}>
+				<SunIcon />
+			</span>
+			{i18n.sun}
 			<span className={cc('icon')}>
 				<LightingIcon />
 			</span>

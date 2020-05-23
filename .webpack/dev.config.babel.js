@@ -1,11 +1,7 @@
 import path from 'path';
-import { DefinePlugin, LoaderOptionsPlugin, HotModuleReplacementPlugin } from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
 import env from 'dotenv'
+import { hot_module_replacement, html_webpack, copy_webpack, loader_options, define } from './plugins';
 import { babel_loader, glob_loader, sass, sass_resources, svgr } from './rules'
-
-const dotenv = env.config({ path: '.env' });
 
 export default {
 	mode: "development",
@@ -43,30 +39,6 @@ export default {
 		historyApiFallback: true,
 		stats: 'errors-only'
 	},
-	plugins: [
-		new HotModuleReplacementPlugin(),
-
-		// handle html files
-		new HtmlWebpackPlugin({
-			template: 'public/index.html',
-			inject: true
-		}),
-
-		new DefinePlugin({
-			'process.env': {
-				NODE_ENV: JSON.stringify('development'),
-				API_URL: JSON.stringify(dotenv.parsed ? dotenv.parsed.API_URL : process.env.API_URL ),
-			}
-		}),
-
-		new CopyWebpackPlugin([ { from: 'public/assets', to: 'assets' } ] ),
-
-		// enable debug mode
-		new LoaderOptionsPlugin({
-			debug: true
-		})
-	],
-	module: {
-		rules: [babel_loader, glob_loader, svgr, sass, sass_resources],
-	}
+	plugins: [hot_module_replacement(), html_webpack(), copy_webpack(), loader_options(), define()],
+	module: { rules: [babel_loader, glob_loader, svgr, sass, sass_resources] }
 };
