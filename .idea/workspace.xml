@@ -37,11 +37,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.webpack/plugins/compression-webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.webpack/plugins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/plugins/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.webpack/prod.config.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/prod.config.babel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.webpack/plugins/compression-webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/plugins/compression-webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,7 +262,7 @@
       <workItem from="1589200202608" duration="1016000" />
       <workItem from="1589206153662" duration="879000" />
       <workItem from="1590059977483" duration="627000" />
-      <workItem from="1590258225858" duration="9047000" />
+      <workItem from="1590258225858" duration="10704000" />
     </task>
     <servers />
   </component>

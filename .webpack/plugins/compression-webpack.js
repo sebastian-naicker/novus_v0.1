@@ -1,5 +1,3 @@
 import CompressionPlugin from 'compression-webpack-plugin'
 
-export default () => new CompressionPlugin({
-	deleteOriginalAssets: true
-})
+export default () => new CompressionPlugin()
