@@ -1,6 +1,6 @@
 import path from 'path'
 import { babel_loader, glob_loader, sass, sass_resources, svgr, extract_css, url_loader } from './rules'
-import { md5_hash, html_webpack, copy_webpack, extract_css_plugin, define } from './plugins';
+import { md5_hash, html_webpack, copy_webpack, extract_css_plugin, define, compression_webpack } from './plugins';
 
 export default {
 	mode: 'production',
@@ -20,6 +20,6 @@ export default {
 		extensions: ['.js', '.jsx', '.test'],
 		modules: ['node_modules', path.resolve(__dirname, '../src/shared')]
 	},
-	plugins: [md5_hash(), html_webpack(true), extract_css_plugin(), define('production'), copy_webpack()],
+	plugins: [md5_hash(), compression_webpack(), html_webpack(true), extract_css_plugin(), define('production'), copy_webpack()],
 	module: { rules: [babel_loader, glob_loader, svgr, sass, sass_resources, extract_css, url_loader] }
 }
