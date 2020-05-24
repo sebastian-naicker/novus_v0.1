@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
+import { getUsers } from '@shared/api/users';
 import memoized from '@hocs/enhanced-components/memoized'
+import withStore from '@hocs/enhanced-components/withStore';
 
-const UserList = ({ users }) => {
+const UserList = ({ users, ...store }) => {
 	useEffect(() => {
-		console.log('rendered')
-	})
+		getUsers(store, true)
+	}, [])
 
 	return (
 		<div>
@@ -17,4 +19,4 @@ const UserList = ({ users }) => {
 	);
 };
 
-export default memoized(UserList)
+export default memoized(withStore(UserList))
