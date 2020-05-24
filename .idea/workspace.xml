@@ -36,11 +36,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.webpack/plugins/compression-webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.webpack/plugins/compression-webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -262,7 +258,7 @@
       <workItem from="1589200202608" duration="1016000" />
       <workItem from="1589206153662" duration="879000" />
       <workItem from="1590059977483" duration="627000" />
-      <workItem from="1590258225858" duration="10704000" />
+      <workItem from="1590258225858" duration="11138000" />
     </task>
     <servers />
   </component>
