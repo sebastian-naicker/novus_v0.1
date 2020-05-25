@@ -12,7 +12,7 @@ const UserList = ({ users, ...store }) => {
 		<div>
 			<ul>
 				{users.hasOwnProperty('userList') && users.userList.map(user => (
-					<li key={user.id}>{user.title}</li>
+					<li key={user.id}>{user.first_name}</li>
 				))}
 			</ul>
 		</div>
