@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types'
-import { getUsers } from '@shared/api/users';
+import { getUsers } from '@shared/nucs/users';
 import memoized from '@hocs/enhanced-components/memoized'
 import withStore from '@hocs/enhanced-components/withStore';
 

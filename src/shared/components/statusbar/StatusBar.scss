@@ -6,6 +6,7 @@
 	display: flex;
 	align-items: center;
 	position: absolute;
+	left: 0;
 	z-index: 9;
 	width: 100%;
 	transition: top 0.4s ease-in-out;
@@ -35,7 +36,6 @@
 
 	&--visible {
 		top: 0;
-		left: 0;
 		padding: 10px;
 	}
 

@@ -1,3 +1,3 @@
 import users from './users/state'
-import genres from './genres/state'
-export default { users, genres };
+import books from './books/state'
+export default { users, books };

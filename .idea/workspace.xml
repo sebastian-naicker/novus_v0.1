@@ -37,14 +37,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/genres/genres.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/genres/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/store/state/genres/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/nucs/genres/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/nucs/genres/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/genres/genres.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/genres/genres.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/api/users/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/nucs/users/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/api/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/nucs/users/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/store/state/genres/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/state/books/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/store/state/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/state/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.alias.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +107,7 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.2" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/svgs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/shared/api/genres" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -125,11 +129,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/api/genres" />
       <recent name="$PROJECT_DIR$/public/assets/svgs" />
       <recent name="$PROJECT_DIR$/src/shared/components" />
       <recent name="$PROJECT_DIR$/src/assets/svgs" />
       <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -359,6 +363,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="717" y="292" width="475" height="529" key="#ESLint/0.27.1920.1053@0.27.1920.1053" timestamp="1587831546498" />
+    <state x="700" y="346" width="509" height="422" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590775565223">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="700" y="346" width="509" height="422" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1590775565223" />
     <state x="225" y="36" width="863" height="1041" key="CommitChangelistDialog2" timestamp="1587658237967">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

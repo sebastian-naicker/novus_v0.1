@@ -13,6 +13,7 @@
 					"@store": "./src/shared/store",
 					"@sockets": "./src/shared/sockets",
 					"@hocs": "./src/shared/higher-order-components",
+					"@nucs": "./src/shared/nucs",
 					"@setup": "./src/setup",
 					"@components": "./src/shared/components",
 					"@constants": "./src/shared/constants",

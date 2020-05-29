@@ -6,6 +6,7 @@ module.exports = {
 			'@root': path.resolve(__dirname, './src'),
 			'@setup': path.resolve(__dirname, './src/setup'),
 			'@shared': path.resolve(__dirname, './src/shared'),
+			'@nucs': path.resolve(__dirname, './src/shared/nucs'),
 			'@store': path.resolve(__dirname, './src/shared/store'),
 			'@sockets': path.resolve(__dirname, './src/shared/sockets'),
 			'@hocs': path.resolve(__dirname, './src/shared/higher-order-components'),
