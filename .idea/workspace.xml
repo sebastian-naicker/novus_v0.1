@@ -37,18 +37,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shared/nucs/genres/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/nucs/genres/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/genres/genres.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/genres/genres.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/api/users/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/nucs/users/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/api/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/nucs/users/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/store/state/genres/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/state/books/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/store/state/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/state/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.alias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

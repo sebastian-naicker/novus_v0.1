@@ -10,7 +10,7 @@ const StatusBar = ({ statusType, message, isVisible, autoHide }) => {
 	useEffect(() => {
 		setTimeout(() => {
 			if (autoHide) setShowStatusBar(false)
-		}, 2500)
+		}, 3500)
 	}, [autoHide])
 
 	useEffect(() => {
