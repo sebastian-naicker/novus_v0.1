@@ -1,4 +1,4 @@
 import { actionFactory } from '@shared/factories';
 
-const SET_USERS = 'SET_USERS'
-export const getUsers = (payload) => actionFactory(SET_USERS, payload)
+const GET_USERS = 'GET_USERS'
+export const getUsers = (payload) => actionFactory(GET_USERS, payload)
