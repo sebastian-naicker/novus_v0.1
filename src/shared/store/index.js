@@ -42,7 +42,7 @@ export default () => {
 	return (
 		<StoreContext.Provider
 			value={{
-				...appState,
+				state: { ...appState },
 				store: updateState,
 				triggerAsync,
 				persist,

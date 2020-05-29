@@ -5,10 +5,6 @@ import memoized from '@hocs/enhanced-components/memoized'
 import withStore from '@hocs/enhanced-components/withStore';
 
 const UserList = ({ users, ...store }) => {
-	useEffect(() => {
-		getUsers(store, true)
-	}, [])
-
 	return (
 		<div>
 			<ul>

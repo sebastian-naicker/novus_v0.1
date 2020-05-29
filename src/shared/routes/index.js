@@ -19,6 +19,12 @@ export const routes = [
 		component: enhancedRoute('about')
 	},
 	{
+		path: '/genres',
+		title: 'Genres',
+		exact: true,
+		component: enhancedRoute('genres')
+	},
+	{
 		component: enhancedRoute('404')
 	}
 ]
