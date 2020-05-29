@@ -1,0 +1,46 @@
+.nvs-status-bar {
+	color: $white;
+	background-color: $app-grey-dark;
+	font-size: map_get($font-sizes, 'sm');
+	font-weight: map_get($weights, 'semi-bold');
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+	transition: top 0.4s ease-in-out;
+
+	&__icon {
+		width: 25px;
+		height: 25px;
+		margin-right: 15px;
+	}
+
+	&__icon > svg {
+		fill: $white;
+		stroke: $white;
+	}
+
+	&--error {
+		background-color: $app-status-red;
+	}
+
+	&--success {
+		background-color: $app-green;
+	}
+
+	&--warning {
+		background-color: $app-yellow;
+	}
+
+	&--visible {
+		top: 0;
+		left: 0;
+		padding: 10px;
+	}
+
+	&--not-visible {
+		top: -45px;
+		padding: 10px;
+	}
+}

@@ -37,7 +37,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/svgs/stop@40.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/svgs/verify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/en/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/components/statusbar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/constants/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/sockets/api-connection/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/sockets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/en/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setup/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/api/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/api/users/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/utils/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.alias.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +72,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/shared/utils/storage/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/shared/higher-order-components/enhanced-route/index.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/pages/home/home.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/shared/routes/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/shared/utils/storage/localStorage/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/home/home.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/shared/routes/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/setup/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/shared/higher-order-components/enhanced-route/index.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -113,22 +132,23 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettier.import.notification.dismissed" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/svgs" />
+      <recent name="$PROJECT_DIR$/src/shared/components" />
+      <recent name="$PROJECT_DIR$/src/assets/svgs" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/shared/components" />
       <recent name="$PROJECT_DIR$/src/shared/higher-order-components" />
       <recent name="$PROJECT_DIR$/src/sass" />
       <recent name="$PROJECT_DIR$/src/shared" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/assets/svgs" />
-      <recent name="$PROJECT_DIR$/src/assets/svgs" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/shared/common/components" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.All tests">

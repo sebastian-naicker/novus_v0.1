@@ -1,6 +1,8 @@
 //eslint-disable-next-line
 import sha256 from 'crypto-js/sha256';
 import { storage } from 'utils/storage';
+import socket from 'sockets'
+import ioEvents from '@constants'
 
 const APP_ID = 'APP_ID';
 
@@ -16,9 +18,14 @@ const storeAppId = (appId) => {
 	}
 };
 
+const connectSocket = appId => {
+	socket.emit(ioEvents.IO_CONNECTION, appId)
+}
+
 const init = () => {
 	const instanceId = createInstanceString();
 	const appId = sha256(instanceId).toString();
+	connectSocket(appId)
 	storeAppId(appId);
 };
 
