@@ -37,26 +37,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/svgs/stop@40.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/svgs/verify.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/en/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/statusbar/StatusBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/statusbar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/constants/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/sockets/api-connection/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/sockets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/en/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/setup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setup/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/api/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/api/users/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/styles/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.alias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/sockets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/sockets/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

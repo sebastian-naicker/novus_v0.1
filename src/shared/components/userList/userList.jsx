@@ -25,7 +25,7 @@ UserList.defaultProps = {
 }
 
 UserList.propTypes = {
-	users: PropTypes.arrayOf(PropTypes.shape({}))
+	users: PropTypes.oneOfType([PropTypes.array, PropTypes.shape({})])
 }
 
 export default memoized(withStore(UserList))

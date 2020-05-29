@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Switch, Route, Router } from 'react-router-dom'
 import PrivateRoute from '@shared/components/privateRoute'
 import history from '@setup/history'
@@ -6,18 +6,13 @@ import { routes } from 'routes'
 import { isLoggedIn } from '@utils/auth'
 import { Footer, Header } from '@components';
 import StatusBar from '@components/statusbar';
-import { onSocketConnection } from '@sockets/api-connection'
 import Loader from '@components/loader';
 
 export default () => {
-	const [isAppLoading, setAppLoading] = useState(false)
-	const [appData, setAppData] = useState({
+	const [isAppLoading] = useState(false)
+	const [appData] = useState({
 		message: ''
 	})
-
-	useEffect(() => {
-		onSocketConnection(setAppLoading, setAppData, setAppData)
-	}, [])
 
 	return (
 		<Router history={history}>
