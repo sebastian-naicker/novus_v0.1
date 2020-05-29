@@ -1,9 +1,11 @@
-@import "~bulma_scss";
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 
 $base-font-size: 16px;
 
+// RESET
 * {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
