@@ -1,0 +1,38 @@
+.nvs-toggle-switch {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+
+	& > input {
+		visibility: hidden;
+	}
+
+	&__handle {
+		display: inline-block;
+		width: 45px;
+		height: 24px;
+		padding: 5px;
+		border-radius: 20px;
+		background-color: var(--theme-font);
+		position: relative;
+		cursor: pointer;
+	}
+
+	&__handle:before {
+		content: '';
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: var(--theme);
+		position: absolute;
+		top: 2px;
+	}
+
+	& > input[data-checked='true'] + &__handle:before {
+		right: 2px;
+	}
+
+	& > input[data-checked='false'] + &__handle:before {
+		left: 2px;
+	}
+}

@@ -4,14 +4,14 @@ import PrivateRoute from '@shared/components/privateRoute'
 import history from '@setup/history'
 import { routes } from 'routes'
 import { isLoggedIn } from '@utils/auth'
-import { Footer, Header } from '@components';
-import StatusBar from '@components/statusbar';
-import Loader from '@components/loader';
+import { Footer, Header } from '@components'
+import StatusBar from '@components/statusbar'
+import Loader from '@components/loader'
 
 export default () => {
 	const [isAppLoading] = useState(false)
 	const [appData] = useState({
-		message: ''
+		message: '',
 	})
 
 	return (
@@ -24,7 +24,7 @@ export default () => {
 				isVisible={appData.hasOwnProperty('isRegistered')}
 				autoHide={appData.status === 'success'}
 			/>
-			<Header />
+			<Header isVisible />
 			<div id='main-content'>
 				<React.Fragment>
 					<Switch>
