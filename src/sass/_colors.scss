@@ -2,6 +2,7 @@ $grey: #ddd;
 
 // greys
 $off-white: #f7f7f7;
+$app-grey-darkest: #1C2331;
 $app-grey-light: #fcfcfc;
 $app-grey-font: #5B5B5B;
 $app-grey-dark: #424B54;
@@ -18,3 +19,12 @@ $app-status-red: #EB5E55;
 
 $white: #ffffff;
 $black: #000000;
+
+:root {
+	--theme-light: #f7f7f7;
+	--theme-dark: #1C2331;
+	--theme-font-dark: #ececec;
+	--theme-font-light: #424B54;
+	--theme: var(--theme);
+	--theme-font: var(--theme-font-light);
+}

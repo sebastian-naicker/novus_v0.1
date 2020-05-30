@@ -1,23 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { withStore } from '@hocs/enhanced-components';
+import React from 'react';
 import cc from '@utils/styles'
 
-const Header = ({ state: { theme }, ...store }) => {
-	const [isLoggedIn, setIsLoggedIn] = useState(false)
-
-	useEffect(() => {
-		const root = document.body
-		root.style.setProperty('--theme', `var(--theme-${theme.displayMode})`)
-		root.style.setProperty('--theme-font', `var(--theme-font-${theme.displayMode})`)
-	}, [theme])
-
+const Header = ({ isVisible }) => {
 	return (
-		<header className={cc('header')}>
-			<nav>
-				<p>some bladdy text</p>
-			</nav>
-		</header>
+		<React.Fragment>
+			{isVisible && (
+				<header className={cc('header')}>
+					<nav>
+						<p>some bladdy text</p>
+					</nav>
+				</header>
+			)}
+		</React.Fragment>
 	);
 }
 
-export default withStore(Header);
+export default Header

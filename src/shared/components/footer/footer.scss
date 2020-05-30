@@ -11,7 +11,7 @@
 		justify-content: center;
 		font-size: map_get($font-sizes, 'sm');
 		font-weight: map_get($weights, 'bold');
-		color: $app-grey-dark;
+		color: var(--theme-font);
 	}
 }
 

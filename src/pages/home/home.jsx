@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types'
-import Logo from '@svgs/logo-2.svg'
+import Logo from '@svgs/logo-alt.svg'
+import LogoDark from '@svgs/logo-alt-dark.svg'
 import UserList from '@components/userList';
+import THEME from '@constants/theme'
+import cc from '@utils/styles'
 import { getGenres } from '@nucs/genres';
 import { withStore } from '@hocs/enhanced-components';
 
-const Home = ({ state: { books }, ...store }) => {
+const Home = ({ state: { books, theme }, ...store }) => {
 	useEffect(() => {
 		getGenres(store, true)
 	}, [])
@@ -13,7 +16,12 @@ const Home = ({ state: { books }, ...store }) => {
 	return (
 		<div className='panel'>
 			<div className='logo-wrapper'>
-				<Logo />
+				{theme.displayMode === THEME.DARK && (
+					<LogoDark className={cc('logo')} />
+				)}
+				{theme.displayMode === THEME.LIGHT && (
+					<Logo className={cc('logo')} />
+				)}
 			</div>
 			<ol>
 				{books.genres.map(book => (

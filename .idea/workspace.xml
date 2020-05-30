@@ -37,9 +37,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/svgs/logo-alt-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/svgs/logo-alt.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +104,7 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.2" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/shared/nucs/theme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/svgs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -127,9 +133,9 @@
       <recent name="$PROJECT_DIR$/src/shared" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/svgs" />
       <recent name="$PROJECT_DIR$/src/shared/nucs/theme" />
       <recent name="$PROJECT_DIR$/src/shared/api/genres" />
-      <recent name="$PROJECT_DIR$/public/assets/svgs" />
       <recent name="$PROJECT_DIR$/src/shared/components" />
       <recent name="$PROJECT_DIR$/src/assets/svgs" />
     </key>
@@ -265,7 +271,7 @@
       <workItem from="1590059977483" duration="627000" />
       <workItem from="1590258225858" duration="11138000" />
       <workItem from="1590435503846" duration="1101000" />
-      <workItem from="1590834197764" duration="10769000" />
+      <workItem from="1590834197764" duration="13274000" />
     </task>
     <servers />
   </component>
