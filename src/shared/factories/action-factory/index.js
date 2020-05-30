@@ -1,5 +1,6 @@
+const env = process.env.NODE_ENV
 const actionFactory = (type, payload) => {
-	console.info(`store/${type}`, { type, payload })
+	if (env.includes('dev')) console.info(`store/${type}`, { type, payload })
 	return { ...payload }
 };
 

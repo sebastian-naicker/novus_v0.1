@@ -4,9 +4,9 @@ import { getUsers } from '@shared/nucs/users';
 import memoized from '@hocs/enhanced-components/memoized'
 import withStore from '@hocs/enhanced-components/withStore';
 
-const UserList = ({ state: { users }, persist }) => {
+const UserList = ({ state: { users }, ...store }) => {
 	useEffect(() => {
-		persist(getUsers)
+		getUsers(store, true)
 	}, [])
 
 	return (

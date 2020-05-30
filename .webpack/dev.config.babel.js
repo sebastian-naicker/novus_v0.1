@@ -26,6 +26,6 @@ export default {
 		]
 	},
 	devServer: serverConfig,
-	plugins: [hot_module_replacement(), html_webpack(), copy_webpack('development'), loader_options(), define()],
+	plugins: [hot_module_replacement(), html_webpack(), copy_webpack(), loader_options(), define('development')],
 	module: { rules: [babel_loader, glob_loader, svgr, sass, sass_resources] }
 };

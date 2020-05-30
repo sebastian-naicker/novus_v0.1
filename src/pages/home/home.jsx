@@ -6,7 +6,8 @@ import { withStore } from '@hocs/enhanced-components';
 
 const Home = ({ state: { books }, ...store }) => {
 	useEffect(() => {
-		store.persist(getGenres)
+		store.persistAllState()
+		getGenres(store, true)
 	}, [])
 
 	return (
