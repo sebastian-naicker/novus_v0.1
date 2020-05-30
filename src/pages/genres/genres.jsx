@@ -23,6 +23,7 @@ const Genres = ({ state: { books }, ...store }) => {
 		<div>
 			{hasError && <StatusBar statusType='error' message={books.error || ''} isVisible autoHide />}
 			<p>rendering genres</p>
+			<p>{JSON.stringify(books)}</p>
 			<button onClick={loadGenres}>Load Genres</button>
 		</div>
 	);
