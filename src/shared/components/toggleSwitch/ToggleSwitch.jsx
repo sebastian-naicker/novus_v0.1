@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
+import { withStore } from '@hocs/enhanced-components'
+import THEME from '@constants/theme'
 import cc from '@utils/styles'
 import { v4 } from 'uuid'
 
-const ToggleSwitch = ({ label, handleToggleOn, handleToggleOff }) => {
-	const [checked, setChecked] = useState(false)
+const ToggleSwitch = ({ state: { theme }, label, handleToggleOn, handleToggleOff }) => {
+	const [checked, setChecked] = useState(theme.displayMode === THEME.DARK)
 	const [id] = useState(v4())
 
 	const handleChange = ({ currentTarget }) => {
-		const currentChecked = currentTarget.checked
-		setChecked(currentChecked)
-		if (currentChecked) {
+		const currentChecked = currentTarget.dataset.checked === 'true'
+		setChecked(!currentChecked)
+		if (!currentChecked) {
 			handleToggleOn()
 		} else {
 			handleToggleOff()
@@ -25,4 +27,4 @@ const ToggleSwitch = ({ label, handleToggleOn, handleToggleOff }) => {
 	)
 }
 
-export default ToggleSwitch
+export default withStore(ToggleSwitch)

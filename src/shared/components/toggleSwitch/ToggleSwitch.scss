@@ -26,10 +26,11 @@
 		background-color: var(--theme);
 		position: absolute;
 		top: 2px;
+		transition: left 0.2s ease-in-out;
 	}
 
 	& > input[data-checked='true'] + &__handle:before {
-		right: 2px;
+		left: calc(45px - 22px);
 	}
 
 	& > input[data-checked='false'] + &__handle:before {

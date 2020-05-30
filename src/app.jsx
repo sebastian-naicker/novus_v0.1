@@ -1,18 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Switch, Route, Router } from 'react-router-dom'
 import PrivateRoute from '@shared/components/privateRoute'
 import history from '@setup/history'
 import { routes } from 'routes'
 import { isLoggedIn } from '@utils/auth'
 import { Footer, Header } from '@components'
+import { withStore } from '@hocs/enhanced-components'
 import StatusBar from '@components/statusbar'
 import Loader from '@components/loader'
 
-export default () => {
+const App = (store) => {
 	const [isAppLoading] = useState(false)
 	const [appData] = useState({
 		message: '',
 	})
+
+	useEffect(() => {
+		store.persistAllState()
+	}, [])
 
 	return (
 		<Router history={history}>
@@ -42,3 +47,5 @@ export default () => {
 		</Router>
 	)
 }
+
+export default withStore(App)
