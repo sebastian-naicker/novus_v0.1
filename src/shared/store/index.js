@@ -19,10 +19,10 @@ export default () => {
 	}
 
 	const updateState = (state, store) => {
-		setState({
-			...appState,
+		setState((st) => ({
+			...st,
 			[store]: { ...appState[store], ...state }
-		})
+		}))
 	}
 
 	const persist = async (nuc) => {
@@ -36,8 +36,9 @@ export default () => {
 	}
 
 	useEffect(() => {
-		if (!persistState) return
-		saveState(appState)
+		if (persistState) {
+			saveState(appState)
+		}
 	}, [appState])
 
 	return (
