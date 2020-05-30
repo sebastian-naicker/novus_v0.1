@@ -33,3 +33,12 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+:root {
+	--theme-light: #f7f7f7;
+	--theme-dark: #555;
+	--theme-font-dark: #f6f6f6;
+	--theme-font-light: #333;
+	--theme: var(--theme-light);
+	--theme-font: var(--theme-font-light);
+}

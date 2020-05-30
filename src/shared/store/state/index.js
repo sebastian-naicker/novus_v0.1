@@ -1,3 +1,4 @@
 import users from './users/state'
 import books from './books/state'
-export default { users, books };
+import theme from './theme/state'
+export default { users, books, theme };

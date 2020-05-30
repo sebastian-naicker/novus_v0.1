@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import withStore from '@hocs/enhanced-components/withStore';
 import { getGenres } from '@nucs/genres'
+import { setThemeMode } from '@nucs/theme';
+import theme from '@constants/theme'
 import StatusBar from '@components/statusbar';
 
 const Genres = ({ state: { books }, ...store }) => {
@@ -9,6 +11,10 @@ const Genres = ({ state: { books }, ...store }) => {
 	const loadGenres = () => {
 		setHasError(false)
 		getGenres(store, true)
+	}
+
+	const setTheme = (mode) => {
+		setThemeMode(store, true)(mode)
 	}
 
 	useEffect(() => {
@@ -24,7 +30,8 @@ const Genres = ({ state: { books }, ...store }) => {
 			{hasError && <StatusBar statusType='error' message={books.error || ''} isVisible autoHide />}
 			<p>rendering genres</p>
 			<p>{JSON.stringify(books)}</p>
-			<button onClick={loadGenres}>Load Genres</button>
+			<button onClick={() => setTheme(theme.DARK)}>Change theme dark</button>
+			<button onClick={() => setTheme(theme.LIGHT)}>Change theme light</button>
 		</div>
 	);
 };

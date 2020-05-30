@@ -37,10 +37,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/shared/constants/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/nucs/theme/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/nucs/theme/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/store/state/theme/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/genres/genres.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/genres/genres.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/userList/userList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/header/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/store/state/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/state/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +105,7 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.2" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/shared/api/genres" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/shared/nucs/theme" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -120,19 +126,19 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/shared/api/genres" />
-      <recent name="$PROJECT_DIR$/public/assets/svgs" />
-      <recent name="$PROJECT_DIR$/src/shared/components" />
-      <recent name="$PROJECT_DIR$/src/assets/svgs" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/shared/components" />
       <recent name="$PROJECT_DIR$/src/shared/higher-order-components" />
       <recent name="$PROJECT_DIR$/src/sass" />
       <recent name="$PROJECT_DIR$/src/shared" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/nucs/theme" />
+      <recent name="$PROJECT_DIR$/src/shared/api/genres" />
+      <recent name="$PROJECT_DIR$/public/assets/svgs" />
+      <recent name="$PROJECT_DIR$/src/shared/components" />
+      <recent name="$PROJECT_DIR$/src/assets/svgs" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.All tests">
@@ -266,7 +272,7 @@
       <workItem from="1590059977483" duration="627000" />
       <workItem from="1590258225858" duration="11138000" />
       <workItem from="1590435503846" duration="1101000" />
-      <workItem from="1590834197764" duration="4350000" />
+      <workItem from="1590834197764" duration="6213000" />
     </task>
     <servers />
   </component>
