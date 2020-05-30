@@ -27,7 +27,9 @@ export default () => {
 
 	const persist = async (nuc) => {
 		const nucData = await nuc({ store: updateState, triggerAsync }, true)
+		const currentPersistedData = loadState()
 		saveState({
+			...currentPersistedData,
 			[nucData.state]: { ...appState[nucData.state], [nucData.property]: nucData.value }
 		})
 		return nucData.value

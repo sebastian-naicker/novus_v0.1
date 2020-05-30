@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import Logo from '@svgs/logo-2.svg'
 import UserList from '@components/userList';
+import { getGenres } from '@nucs/genres';
 import { withStore } from '@hocs/enhanced-components';
 
-const Home = ({ state: { books } }) => {
+const Home = ({ state: { books }, ...store }) => {
 	useEffect(() => {
-		console.log(books)
+		store.persist(getGenres)
 	}, [])
 
 	return (
