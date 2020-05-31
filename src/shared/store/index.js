@@ -1,8 +1,8 @@
 import React, { createContext, useState, useEffect } from 'react'
 import state from './state'
 import App from '@root/app'
-import Loader from '@components/loader';
-import { loadState, saveState } from '@store/helpers';
+import Loader from '@components/loader'
+import { loadState, saveState } from '@store/helpers'
 
 const initialState = { ...state }
 
@@ -21,16 +21,16 @@ export default () => {
 	const updateState = (state, store) => {
 		setState((st) => ({
 			...st,
-			[store]: { ...appState[store], ...state }
+			[store]: { ...appState[store], ...state },
 		}))
 	}
 
-	const persist = async (nuc) => {
-		const nucData = await nuc({ store: updateState, triggerAsync }, true)
+	const persist = (nuc) => async (...args) => {
+		const nucData = await nuc({ store: updateState, triggerAsync }, true)(...args)
 		const currentPersistedData = loadState()
 		saveState({
 			...currentPersistedData,
-			[nucData.state]: { ...appState[nucData.state], [nucData.property]: nucData.value }
+			[nucData.state]: { ...appState[nucData.state], [nucData.property]: nucData.value },
 		})
 		return nucData.value
 	}
@@ -48,7 +48,7 @@ export default () => {
 				store: updateState,
 				triggerAsync,
 				persist,
-				persistAllState: () => setPersistState(true)
+				persistAllState: () => setPersistState(true),
 			}}
 		>
 			{appLoading && <Loader />}
@@ -56,4 +56,3 @@ export default () => {
 		</StoreContext.Provider>
 	)
 }
-

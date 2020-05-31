@@ -37,18 +37,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b66040f5-a034-4d84-9fb0-2cf521d936c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shared/components/toggleSwitch/ToggleSwitch.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/toggleSwitch/ToggleSwitch.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/toggleSwitch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/header/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/nucs/genres/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/nucs/genres/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,6 +268,7 @@
       <workItem from="1590258225858" duration="11138000" />
       <workItem from="1590435503846" duration="1101000" />
       <workItem from="1590834197764" duration="15879000" />
+      <workItem from="1590920059417" duration="97000" />
     </task>
     <servers />
   </component>
@@ -405,10 +398,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="624" y="252" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1590857320861" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1590775203578">
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1590919806979">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1590775203578" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1590919806979" />
   </component>
   <component name="masterDetails">
     <states>

@@ -10,7 +10,7 @@ import { withStore } from '@hocs/enhanced-components'
 
 const Home = ({ state: { books, theme }, ...store }) => {
 	useEffect(() => {
-		getGenres(store, true)
+		store.persist(getGenres)(10)
 	}, [])
 
 	return (
